@@ -1,0 +1,3113 @@
+[
+  {
+    "region": "Sector 1",
+    "name": "Drop off Point [Sector 1]",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Sector 1",
+    "name": "Visit the Merchant [Sector 1]",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Sector 1",
+    "name": "Visit CURA [Sector 1]",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Supply 1/3 [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Supply 2/3 [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Supply 3/3 [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Beat The Exit \"Guard\" [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Harmony Sector",
+    "name": "Get Past the \"Guard\" [Harmony Sector]",
+    "category": [
+      "[Harmony Sector]"
+    ],
+    "requires": "|Harmony Sector|"
+  },
+  {
+    "region": "Harmony Sector",
+    "name": "Find the Link [Harmony Sector]",
+    "category": [
+      "[Harmony Sector]"
+    ],
+    "requires": "|Harmony Sector|"
+  },
+  {
+    "region": "Harmony Sector",
+    "name": "Visit a store [Harmony Sector]",
+    "category": [
+      "[Harmony Sector]"
+    ],
+    "requires": "|Harmony Sector|"
+  },
+  {
+    "region": "Harmony Sector",
+    "name": "Leave the Sector [Harmony Sector]",
+    "category": [
+      "[Harmony Sector]"
+    ],
+    "requires": "|Harmony Sector|"
+  },
+  {
+    "name": "Get past the \"Guard\" [Gathering Sector]",
+    "region": "Gathering Sector",
+    "category": [
+      "[Gathering Sector]"
+    ],
+    "requires": "|Gathering Sector|"
+  },
+  {
+    "name": "Visit a Store [Gathering Sector]",
+    "region": "Gathering Sector",
+    "category": [
+      "[Gathering Sector]"
+    ],
+    "requires": "|Gathering Sector|"
+  },
+  {
+    "name": "Visit the Children [Gathering Sector]",
+    "region": "Gathering Sector",
+    "category": [
+      "[Gathering Sector]"
+    ],
+    "requires": "|Gathering Sector|"
+  },
+  {
+    "name": "Leave the sector [Gathering Sector]",
+    "region": "Gathering Sector",
+    "category": [
+      "[Gathering Sector]"
+    ],
+    "requires": "|Gathering Sector|"
+  },
+  {
+    "region": "Free Mantis Sector",
+    "name": "Get past the \"Guard\" [Free Mantis Sector]",
+    "category": [
+      "[Free Mantis Sector]"
+    ],
+    "requires": "|Free Mantis Sector|"
+  },
+  {
+    "region": "Free Mantis Sector",
+    "name": "Visit a Store [Free Mantis Sector]",
+    "victory": false,
+    "category": [
+      "[Free Mantis Sector]"
+    ],
+    "requires": "|Free Mantis Sector|"
+  },
+  {
+    "name": "Visit the Outpost [Free Mantis Sector]",
+    "region": "Free Mantis Sector",
+    "category": [
+      "[Free Mantis Sector]"
+    ],
+    "requires": "|Free Mantis Sector|"
+  },
+  {
+    "name": "Leave the Sector [Free Mantis Sector]",
+    "region": "Free Mantis Sector",
+    "category": [
+      "[Free Mantis Sector]"
+    ],
+    "requires": "|Free Mantis Sector|"
+  },
+  {
+    "name": "Get Past the gaurd [Outcast Sector]",
+    "region": "Outcast Sector",
+    "category": [
+      "[Outcast Sector]"
+    ],
+    "requires": "|Outcast Sector|"
+  },
+  {
+    "name": "Visit a Store [Outcast Sector]",
+    "region": "Outcast Sector",
+    "category": [
+      "[Outcast Sector]"
+    ],
+    "requires": "|Outcast Sector|"
+  },
+  {
+    "region": "Outcast Sector",
+    "name": "Visit the Outpost [Outcast Sector]",
+    "category": [
+      "[Outcast Sector]"
+    ],
+    "requires": "|Outcast Sector|"
+  },
+  {
+    "name": "Leave the Sector [Outcast Sector]",
+    "region": "Outcast Sector",
+    "category": [
+      "[Outcast Sector]"
+    ],
+    "requires": "|Outcast Sector|"
+  },
+  {
+    "region": "Union Sector",
+    "name": "Get Past the \"Guard\" [Union Sector]",
+    "category": [
+      "[Union Sector]"
+    ],
+    "requires": "|Union Sector|"
+  },
+  {
+    "name": "Visit a Store [Union Sector]",
+    "region": "Union Sector",
+    "category": [
+      "[Union Sector]"
+    ],
+    "requires": "|Union Sector|"
+  },
+  {
+    "name": "Visit the Outpost [Union Sector]",
+    "region": "Union Sector",
+    "category": [
+      "[Union Sector]"
+    ],
+    "requires": "|Union Sector|"
+  },
+  {
+    "name": "Leave the Sector [Union Sector]",
+    "region": "Union Sector",
+    "category": [
+      "[Union Sector]"
+    ],
+    "requires": "|Union Sector|"
+  },
+  {
+    "region": "Separatisit Sector",
+    "name": "Get Past the \"Guard\" [Separatisit Sector]",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": "|Separatisit Sector|"
+  },
+  {
+    "name": "Visit a Store [Separatisit Sector]",
+    "region": "Separatisit Sector",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": "|Separatisit Sector|"
+  },
+  {
+    "name": "Visit the Outpost [Separatisit Sector]",
+    "region": "Separatisit Sector",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": "|Separatisit Sector|"
+  },
+  {
+    "name": "Find the Link [Separatisit Sector]",
+    "region": "Separatisit Sector",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": "|Separatisit Sector|"
+  },
+  {
+    "region": "Separatisit Sector",
+    "name": "Leave the Sector [Spearatisit Sector]",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": "|Separatisit Sector|"
+  },
+  {
+    "name": "Acient Quest Turn In",
+    "category": [
+      "Acient Quest"
+    ],
+    "requires": "|Ancient Wastelands Sector| AND (|Harmony Sector| OR |Separatisit Sector| OR |Harmony Coreworlds Sector| OR |Emancipated Sanctuary Sector|)"
+  },
+  {
+    "name": "Acient Quest Pick up",
+    "category": [
+      "Acient Quest"
+    ],
+    "requires": "|Harmony Sector| OR |Separatisit Sector| OR |Harmony Coreworlds Sector| OR |Emancipated Sanctuary Sector|"
+  },
+  {
+    "region": "Confederate Sector",
+    "name": "Get Past the \"Guard\" [Confederate Sector]",
+    "category": [
+      "[Confederate Sector]"
+    ],
+    "requires": "|Confederate Sector|"
+  },
+  {
+    "region": "Confederate Sector",
+    "name": "Visit a Store [Confederate Sector]",
+    "category": [
+      "[Confederate Sector]"
+    ],
+    "requires": "|Confederate Sector|"
+  },
+  {
+    "name": "Leave the Sector [Confederate Sector]",
+    "region": "Confederate Sector",
+    "category": [
+      "[Confederate Sector]"
+    ],
+    "requires": "|Confederate Sector|"
+  },
+  {
+    "name": "Get Past the \"Guard\" [Pirate [Sale!] Sector]",
+    "region": "Pirate [Sale!] Sector",
+    "category": [
+      "[Pirate [Sale!] Sector]"
+    ],
+    "requires": "|Pirate [Sale!] Sector|"
+  },
+  {
+    "name": "Visit a Store (non Hektar Mega-Market (tm)) [Pirate [Sale!] Sector]",
+    "region": "Pirate [Sale!] Sector",
+    "category": [
+      "[Pirate [Sale!] Sector]"
+    ],
+    "requires": "|Pirate [Sale!] Sector|"
+  },
+  {
+    "name": "Collect U.W.U. point 1/4[Pirate [Sale!] Sector]",
+    "region": "Pirate [Sale!] Sector",
+    "category": [
+      "[Pirate [Sale!] Sector]"
+    ],
+    "requires": "|Pirate [Sale!] Sector|"
+  },
+  {
+    "name": "Collect U.W.U. point 2/4 [Pirate [Sale!] Sector]",
+    "region": "Pirate [Sale!] Sector",
+    "category": [
+      "[Pirate [Sale!] Sector]"
+    ],
+    "requires": "|Pirate [Sale!] Sector|"
+  },
+  {
+    "name": "Collect U.W.U. point 3/4 [Pirate [Sale!] Sector]",
+    "region": "Pirate [Sale!] Sector",
+    "category": [
+      "[Pirate [Sale!] Sector]"
+    ],
+    "requires": "|Pirate [Sale!] Sector|"
+  },
+  {
+    "name": "Collect U.W.U. point 4/4 [Pirate [Sale!] Sector]",
+    "region": "Pirate [Sale!] Sector",
+    "category": [
+      "[Pirate [Sale!] Sector]"
+    ],
+    "requires": "|Pirate [Sale!] Sector|"
+  },
+  {
+    "name": "Leave the Sector [Pirate [Sale!] Sector]",
+    "region": "Pirate [Sale!] Sector",
+    "category": [
+      "[Pirate [Sale!] Sector]"
+    ],
+    "requires": "|Pirate [Sale!] Sector|"
+  },
+  {
+    "name": "Get Past the \"Guard\" [Geniocracy Sector]",
+    "region": "Geniocracy Sector",
+    "category": [
+      "[Geniocracy Sector]"
+    ],
+    "requires": "|Geniocracy Sector|"
+  },
+  {
+    "region": "Geniocracy Sector",
+    "name": "Visit a Store [Geniocracy Sector]",
+    "category": [
+      "[Geniocracy Sector]"
+    ],
+    "requires": "|Geniocracy Sector|"
+  },
+  {
+    "name": "Leave the Sector [Geniocracy Sector]",
+    "region": "Geniocracy Sector",
+    "category": [
+      "[Geniocracy Sector]"
+    ],
+    "requires": "|Geniocracy Sector|"
+  },
+  {
+    "region": "Republican [Sale!] Sector",
+    "name": "Get Past the \"Guard\" [Republican [Sale!] Sector]",
+    "category": [
+      "[Republican [Sale!] Sector]"
+    ],
+    "requires": "|Republican [Sale!] Sector|"
+  },
+  {
+    "region": "Republican [Sale!] Sector",
+    "name": "Visit a Store (non Hektar Mega-Market (tm)) [Republican [Sale!] Sector]",
+    "category": [
+      "[Republican [Sale!] Sector]"
+    ],
+    "requires": "|Republican [Sale!] Sector|"
+  },
+  {
+    "region": "Republican [Sale!] Sector",
+    "name": "Collect U.W.U. point 1/4 [Republican [Sale!] Sector]",
+    "category": [
+      "[Republican [Sale!] Sector]"
+    ],
+    "requires": "|Republican [Sale!] Sector|"
+  },
+  {
+    "region": "Republican [Sale!] Sector",
+    "name": "Collect U.W.U. point 2/4 [Republican [Sale!] Sector]",
+    "category": [
+      "[Republican [Sale!] Sector]"
+    ],
+    "requires": "|Republican [Sale!] Sector|"
+  },
+  {
+    "name": "Collect U.W.U. point 3/4 [Republican [Sale!] Sector]",
+    "region": "Republican [Sale!] Sector",
+    "category": [
+      "[Republican [Sale!] Sector]"
+    ],
+    "requires": "|Republican [Sale!] Sector|"
+  },
+  {
+    "name": "Collect U.W.U. point 4/4 [Republican [Sale!] Sector]",
+    "region": "Republican [Sale!] Sector",
+    "category": [
+      "[Republican [Sale!] Sector]"
+    ],
+    "requires": "|Republican [Sale!] Sector|"
+  },
+  {
+    "region": "Republican [Sale!] Sector",
+    "name": "Leave the Sector [Republican [Sale!] Sector]",
+    "category": [
+      "[Republican [Sale!] Sector]"
+    ],
+    "requires": "|Republican [Sale!] Sector|"
+  },
+  {
+    "region": "Vagabond Sector",
+    "name": "Get Past the \"Guard\" [Vagabond Sector]",
+    "category": [
+      "[Vagabond Sector]"
+    ],
+    "requires": "|Vagabond Sector|"
+  },
+  {
+    "name": "Visit a Store [Vagabond Sector]",
+    "region": "Vagabond Sector",
+    "category": [
+      "[Vagabond Sector]"
+    ],
+    "requires": "|Vagabond Sector|"
+  },
+  {
+    "name": "Destroy Dynasty [Vagabond Sector]",
+    "region": "Vagabond Sector",
+    "category": [
+      "[Vagabond Sector]"
+    ],
+    "requires": "|Vagabond Sector|"
+  },
+  {
+    "name": "Leave the Sector [Vagabond Sector]",
+    "region": "Vagabond Sector",
+    "category": [
+      "[Vagabond Sector]"
+    ],
+    "requires": "|Vagabond Sector|"
+  },
+  {
+    "region": "Kleptocracy [Sale!] Sector",
+    "name": "Get Past the \"Guard\" [Kleptocracy [Sale!] Sector]",
+    "category": [
+      "[Kleptocracy [Sale!] Sector]"
+    ],
+    "requires": "|Kleptocracy [Sale!] Sector|"
+  },
+  {
+    "region": "Kleptocracy [Sale!] Sector",
+    "name": "Visit a Store (non Hektar Mega-Market (tm)) [Kleptocracy [Sale!] Sector]",
+    "category": [
+      "[Kleptocracy [Sale!] Sector]"
+    ],
+    "requires": "|Kleptocracy [Sale!] Sector|"
+  },
+  {
+    "region": "Kleptocracy [Sale!] Sector",
+    "name": "Collect U.W.U. point 1/4 [Kleptocracy [Sale!] Sector]",
+    "category": [
+      "[Kleptocracy [Sale!] Sector]"
+    ],
+    "requires": "|Kleptocracy [Sale!] Sector|"
+  },
+  {
+    "name": "Collect U.W.U. point 2/4 [Kleptocracy [Sale!] Sector]",
+    "region": "Kleptocracy [Sale!] Sector",
+    "category": [
+      "[Kleptocracy [Sale!] Sector]"
+    ],
+    "requires": "|Kleptocracy [Sale!] Sector|"
+  },
+  {
+    "name": "Collect U.W.U. point 3/4 [Kleptocracy [Sale!] Sector]",
+    "region": "Kleptocracy [Sale!] Sector",
+    "category": [
+      "[Kleptocracy [Sale!] Sector]"
+    ],
+    "requires": "|Kleptocracy [Sale!] Sector|"
+  },
+  {
+    "name": "Collect U.W.U. point 4/4 [Kleptocracy [Sale!] Sector]",
+    "region": "Kleptocracy [Sale!] Sector",
+    "category": [
+      "[Kleptocracy [Sale!] Sector]"
+    ],
+    "requires": "|Kleptocracy [Sale!] Sector|"
+  },
+  {
+    "name": "Leave the Sector [Kleptocracy [Sale!] Sector]",
+    "region": "Kleptocracy [Sale!] Sector",
+    "category": [
+      "[Kleptocracy [Sale!] Sector]"
+    ],
+    "requires": "|Kleptocracy [Sale!] Sector|"
+  },
+  {
+    "region": "Auto Sector",
+    "name": "Get Past the \"Guard\" [Auto Sector]",
+    "category": [
+      "[Auto Sector]"
+    ],
+    "requires": "|Auto Sector|"
+  },
+  {
+    "region": "Auto Sector",
+    "name": "Visit a Store [Auto Sector]",
+    "category": [
+      "[Auto Sector]"
+    ],
+    "requires": "|Auto Sector|"
+  },
+  {
+    "region": "Auto Sector",
+    "name": "Leave the Sector [Auto Sector]",
+    "category": [
+      "[Auto Sector]"
+    ],
+    "requires": "|Auto Sector|"
+  },
+  {
+    "region": "Coalition Sector",
+    "name": "Get Past the \"Guard\" [Coalition Sector]",
+    "category": [
+      "[Coalition Sector]"
+    ],
+    "requires": "|Coalition Sector|"
+  },
+  {
+    "name": "Visit a Store [Coalition Sector]",
+    "region": "Coalition Sector",
+    "category": [
+      "[Coalition Sector]"
+    ],
+    "requires": "|Coalition Sector|"
+  },
+  {
+    "name": "Leave the Sector [Coalition Sector]",
+    "region": "Coalition Sector",
+    "category": [
+      "[Coalition Sector]"
+    ],
+    "requires": "|Coalition Sector|"
+  },
+  {
+    "region": "Duskbringer Sector",
+    "name": "Get Past the \"Guard\" [Duskbringer Sector]",
+    "category": [
+      "[Duskbringer Sector]"
+    ],
+    "requires": "|Duskbringer Sector|"
+  },
+  {
+    "name": "Visit a Store [Duskbringer Sector]",
+    "region": "Duskbringer Sector",
+    "category": [
+      "[Duskbringer Sector]"
+    ],
+    "requires": "|Duskbringer Sector|"
+  },
+  {
+    "name": "Leave the Sector [Duskbringer Sector]",
+    "region": "Duskbringer Sector",
+    "category": [
+      "[Duskbringer Sector]"
+    ],
+    "requires": "|Duskbringer Sector|"
+  },
+  {
+    "region": "Hive Sector",
+    "name": "Get Past the \"Guard\" [Hive Sector]",
+    "category": [
+      "[Hive Sector]"
+    ],
+    "requires": "|Hive Sector|"
+  },
+  {
+    "region": "Hive Sector",
+    "name": "Visit a Store [Hive Sector]",
+    "category": [
+      "[Hive Sector]"
+    ],
+    "requires": "|Hive Sector|"
+  },
+  {
+    "region": "Hive Sector",
+    "name": "Leave the Sector [Hive Sector]",
+    "category": [
+      "[Hive Sector]"
+    ],
+    "requires": "|Hive Sector|"
+  },
+  {
+    "region": "Rebel Sector",
+    "name": "Get Past the \"Guard\" [Rebel Sector]",
+    "category": [
+      "[Rebel Sector]"
+    ],
+    "requires": "|Rebel Sector|"
+  },
+  {
+    "name": "Visit a Store [Rebel Sector]",
+    "region": "Rebel Sector",
+    "category": [
+      "[Rebel Sector]"
+    ],
+    "requires": "|Rebel Sector|"
+  },
+  {
+    "region": "Rebel Sector",
+    "name": "Leave the Sector [Rebel Sector]",
+    "category": [
+      "[Rebel Sector]"
+    ],
+    "requires": "|Rebel Sector|"
+  },
+  {
+    "region": "Theocracy Sector",
+    "name": "Get Past the \"Guard\" [Theocracy Sector]",
+    "category": [
+      "[Theocracy Sector]"
+    ],
+    "requires": "|Theocracy Sector|"
+  },
+  {
+    "region": "Theocracy Sector",
+    "name": "Visit a Store [Theocracy Sector]",
+    "category": [
+      "[Theocracy Sector]"
+    ],
+    "requires": "|Theocracy Sector|"
+  },
+  {
+    "region": "Theocracy Sector",
+    "name": "Leave the Sector [Theocracy Sector]",
+    "category": [
+      "[Theocracy Sector]"
+    ],
+    "requires": "|Theocracy Sector|"
+  },
+  {
+    "region": "Abandoned [Sale!] Sector",
+    "name": "Get Past the \"Guard\" [Abandoned [Sale!] Sector]",
+    "category": [
+      "[Abandoned [Sale!] Sector]"
+    ],
+    "requires": "|Abandoned [Sale!] Sector|"
+  },
+  {
+    "region": "Abandoned [Sale!] Sector",
+    "name": "Visit a Store (non Hektar Mega-Market (tm)) [Abandoned [Sale!] Sector]",
+    "category": [
+      "[Abandoned [Sale!] Sector]"
+    ],
+    "requires": "|Abandoned [Sale!] Sector|"
+  },
+  {
+    "region": "Abandoned [Sale!] Sector",
+    "name": "Collect U.W.U. point 1/4 [Abandoned [Sale!] Sector]",
+    "category": [
+      "[Abandoned [Sale!] Sector]"
+    ],
+    "requires": "|Abandoned [Sale!] Sector|"
+  },
+  {
+    "name": "Collect U.W.U. point 2/4 [Abandoned [Sale!] Sector]",
+    "region": "Abandoned [Sale!] Sector",
+    "category": [
+      "[Abandoned [Sale!] Sector]"
+    ],
+    "requires": "|Abandoned [Sale!] Sector|"
+  },
+  {
+    "region": "Abandoned [Sale!] Sector",
+    "name": "Collect U.W.U. point 3/4 [Abandoned [Sale!] Sector]",
+    "category": [
+      "[Abandoned [Sale!] Sector]"
+    ],
+    "requires": "|Abandoned [Sale!] Sector|"
+  },
+  {
+    "region": "Abandoned [Sale!] Sector",
+    "name": "Collect U.W.U. point 4/4 [Abandoned [Sale!] Sector]",
+    "category": [
+      "[Abandoned [Sale!] Sector]"
+    ],
+    "requires": "|Abandoned [Sale!] Sector|"
+  },
+  {
+    "region": "Abandoned [Sale!] Sector",
+    "name": "Leave the Sector [Abandoned [Sale!] Sector]",
+    "category": [
+      "[Abandoned [Sale!] Sector]"
+    ],
+    "requires": "|Abandoned [Sale!] Sector|"
+  },
+  {
+    "region": "Mining Sector",
+    "name": "Get Past the \"Guard\" [Mining Sector]",
+    "category": [
+      "[Mining Sector]"
+    ],
+    "requires": "|Mining Sector|"
+  },
+  {
+    "name": "Visit a Store [Mining Sector]",
+    "region": "Mining Sector",
+    "category": [
+      "[Mining Sector]"
+    ],
+    "requires": "|Mining Sector|"
+  },
+  {
+    "name": "Leave the Sector [Mining Sector]",
+    "region": "Mining Sector",
+    "category": [
+      "[Mining Sector]"
+    ],
+    "requires": "|Mining Sector|"
+  },
+  {
+    "region": "Unexplored Sector",
+    "name": "Get Past the \"Guard\" [Unexplored Sector]",
+    "category": [
+      "[Unexplored Sector]"
+    ],
+    "requires": "|Unexplored Sector|"
+  },
+  {
+    "region": "Unexplored Sector",
+    "name": "Visit a Store [Unexplored Sector]",
+    "category": [
+      "[Unexplored Sector]"
+    ],
+    "requires": "|Unexplored Sector|"
+  },
+  {
+    "region": "Unexplored Sector",
+    "name": "Leave the Sector [Unexplored Sector]",
+    "category": [
+      "[Unexplored Sector]"
+    ],
+    "requires": "|Unexplored Sector|"
+  },
+  {
+    "region": "Federation Embassy Sector",
+    "name": "Get Past the \"Guard\" [Federation Embassy Sector]",
+    "category": [
+      "[Federation Embassy Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Federation Embassy Sector]",
+    "region": "Federation Embassy Sector",
+    "category": [
+      "[Federation Embassy Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Federation Embassy Sector]",
+    "region": "Federation Embassy Sector",
+    "category": [
+      "[Federation Embassy Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Gathering Gardenworlds Sector",
+    "name": "Get Past the \"Guard\" [Gathering Gardenworlds Sector]",
+    "category": [
+      "[Gathering Gardenworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Gathering Gardenworlds Sector]",
+    "region": "Gathering Gardenworlds Sector",
+    "category": [
+      "[Gathering Gardenworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Gathering Gardenworlds Sector]",
+    "region": "Gathering Gardenworlds Sector",
+    "category": [
+      "[Gathering Gardenworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Harmony Coreworlds Sector",
+    "name": "Get Past the \"Guard\" [Harmony Coreworlds Sector]",
+    "category": [
+      "[Harmony Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Harmony Coreworlds Sector]",
+    "region": "Harmony Coreworlds Sector",
+    "category": [
+      "[Harmony Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Harmony Coreworlds Sector]",
+    "region": "Harmony Coreworlds Sector",
+    "category": [
+      "[Harmony Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hunting Grounds Sector",
+    "name": "Get Past the \"Guard\" [Hunting Grounds Sector]",
+    "category": [
+      "[Hunting Grounds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Hunting Grounds Sector]",
+    "region": "Hunting Grounds Sector",
+    "category": [
+      "[Hunting Grounds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Hunting Grounds Sector]",
+    "region": "Hunting Grounds Sector",
+    "category": [
+      "[Hunting Grounds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Militia Encampment Sector",
+    "name": "Get Past the \"Guard\" [Militia Encampment Sector]",
+    "category": [
+      "[Militia Encampment Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Militia Encampment Sector]",
+    "region": "Militia Encampment Sector",
+    "category": [
+      "[Militia Encampment Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Militia Encampment Sector]",
+    "region": "Militia Encampment Sector",
+    "category": [
+      "[Militia Encampment Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Theocracy Badlands Sector",
+    "name": "Get Past the \"Guard\" [Theocracy Badlands Sector]",
+    "category": [
+      "[Theocracy Badlands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Theocracy Badlands Sector]",
+    "region": "Theocracy Badlands Sector",
+    "category": [
+      "[Theocracy Badlands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Theocracy Badlands Sector",
+    "name": "Leave the Sector [Theocracy Badlands Sector]",
+    "category": [
+      "[Theocracy Badlands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Union Coreworlds Sector",
+    "name": "Get Past the \"Guard\" [Union Coreworlds Sector]",
+    "category": [
+      "[Union Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Union Coreworlds Sector",
+    "name": "Visit Earth [Union Coreworlds Sector]",
+    "category": [
+      "[Union Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Grave Rob Jackson Newman [Union Coreworlds Sector]",
+    "region": "Union Coreworlds Sector",
+    "category": [
+      "[Union Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Union Coreworlds Sector",
+    "name": "Get the Barrel [Union Coreworlds Sector]",
+    "category": [
+      "[Union Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Get the Base [Union Coreworlds Sector]",
+    "region": "Union Coreworlds Sector",
+    "category": [
+      "[Union Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Union Coreworlds Sector",
+    "name": "Leave the Sector [Union Coreworlds Sector]",
+    "category": [
+      "[Union Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Union Coreworlds Sector",
+    "name": "Visit a Store [Union Coreworlds Sector]",
+    "category": [
+      "[Union Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Confederate Coreworlds Sector",
+    "name": "Get Past the \"Guard\" [Confederate Coreworlds Sector]",
+    "category": [
+      "[Confederate Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Confederate Coreworlds Sector",
+    "name": "Visit a Store [Confederate Coreworlds Sector]",
+    "category": [
+      "[Confederate Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Confederate Coreworlds Sector",
+    "name": "Leave the Sector [Confederate Coreworlds Sector]",
+    "category": [
+      "[Confederate Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Emancipated Sanctuary Sector",
+    "name": "Get Past the \"Guard\" [Emancipated Sanctuary Sector]",
+    "category": [
+      "[Emancipated Sanctuary Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Emancipated Sanctuary Sector",
+    "name": "Visit the Link [Emancipated Sanctuary Sector]",
+    "category": [
+      "[Emancipated Sanctuary Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Emancipated Sanctuary Sector",
+    "name": "Visit a Store [Emancipated Sanctuary Sector]",
+    "category": [
+      "[Emancipated Sanctuary Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Emancipated Sanctuary Sector",
+    "name": "Leave the Sector [Emancipated Sanctuary Sector]",
+    "category": [
+      "[Emancipated Sanctuary Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Guild Territory Sector",
+    "name": "Get Past the \"Guard\" [Guild Territory Sector]",
+    "category": [
+      "[Guild Territory Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Guild Territory Sector]",
+    "region": "Guild Territory Sector",
+    "category": [
+      "[Guild Territory Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Guild Territory Sector",
+    "name": "Leave the Sector [Guild Territory Sector]",
+    "category": [
+      "[Guild Territory Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Illesctrian Oasis Sector",
+    "name": "Get Past the \"Guard\" [Illesctrian Oasis Sector]",
+    "category": [
+      "[Illesctrian Oasis Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Illesctrian Oasis Sector",
+    "name": "Visit a Store [Illesctrian Oasis Sector]",
+    "category": [
+      "[Illesctrian Oasis Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Illesctrian Oasis Sector",
+    "name": "Leave the Sector [Illesctrian Oasis Sector]",
+    "category": [
+      "[Illesctrian Oasis Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hacked Union Sector",
+    "name": "Get Past the \"Guard\" [Hacked Union Sector]",
+    "category": [
+      "[Hacked Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hacked Union Sector",
+    "name": "Visit a Store [Hacked Union Sector]",
+    "category": [
+      "[Hacked Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hacked Union Sector",
+    "name": "Defeat the Hacker [Hacked Union Sector]",
+    "category": [
+      "[Hacked Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hacked Union Sector",
+    "name": "Leave the Sector [Hacked Union Sector]",
+    "category": [
+      "[Hacked Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ministry Capital Sector",
+    "name": "Get Past the \"Guard\" [Ministry Capital Sector]",
+    "category": [
+      "[Ministry Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ministry Capital Sector",
+    "name": "Visit a Store [Ministry Capital Sector]",
+    "category": [
+      "[Ministry Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ministry Capital Sector",
+    "name": "Leave the Sector [Ministry Capital Sector]",
+    "category": [
+      "[Ministry Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ministry Sector",
+    "name": "Get Past the \"Guard\" [Ministry Sector]",
+    "category": [
+      "[Ministry Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ministry Sector",
+    "name": "Visit a Store [Ministry Sector]",
+    "category": [
+      "[Ministry Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ministry Sector",
+    "name": "Leave the Sector [Ministry Sector]",
+    "category": [
+      "[Ministry Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Lanius Swarmlands Sector",
+    "name": "Get Past the \"Guard\" [Lanius Swarmlands Sector]",
+    "category": [
+      "[Lanius Swarmlands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Lanius Swarmlands Sector",
+    "name": "Visit a Store [Lanius Swarmlands Sector]",
+    "category": [
+      "[Lanius Swarmlands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Lanius Swarmlands Sector]",
+    "region": "Lanius Swarmlands Sector",
+    "category": [
+      "[Lanius Swarmlands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Get Past the \"Guard\" [Lost Sun Stronghold Sector]",
+    "region": "Lost Sun Stronghold Sector",
+    "category": [
+      "[Lost Sun Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Lost Sun Stronghold Sector]",
+    "region": "Lost Sun Stronghold Sector",
+    "category": [
+      "[Lost Sun Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Lost Sun Stronghold Sector",
+    "name": "Leave the Sector [Lost Sun Stronghold Sector]",
+    "category": [
+      "[Lost Sun Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "The Black Market Sector",
+    "name": "Get Past the \"Guard\" [The Black Market Sector]",
+    "category": [
+      "[The Black Market Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [The Black Market Sector]",
+    "region": "The Black Market Sector",
+    "category": [
+      "[The Black Market Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [The Black Market Sector]",
+    "region": "The Black Market Sector",
+    "category": [
+      "[The Black Market Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Coalition Stronghold Sector",
+    "name": "Get Past the \"Guard\" [Coalition Stronghold Sector]",
+    "category": [
+      "[Coalition Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Coalition Stronghold Sector",
+    "name": "Visit a Store [Coalition Stronghold Sector]",
+    "category": [
+      "[Coalition Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Coalition Stronghold Sector",
+    "name": "Leave the Sector [Coalition Stronghold Sector]",
+    "category": [
+      "[Coalition Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Eargen Republic Capital Sector",
+    "name": "Get Past the \"Guard\" [Eargen Republic Capital Sector]",
+    "category": [
+      "[Eargen Republic Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Eargen Republic Capital Sector",
+    "name": "Visit a Store [Eargen Republic Capital Sector]",
+    "category": [
+      "[Eargen Republic Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Eargen Republic Capital Sector",
+    "name": "Leave the Sector [Eargen Republic Capital Sector]",
+    "category": [
+      "[Eargen Republic Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Kleptocracy Capital Sector",
+    "name": "Get Past the \"Guard\" [Kleptocracy Capital Sector]",
+    "category": [
+      "[Kleptocracy Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Kleptocracy Capital Sector",
+    "name": "Visit a Store [Kleptocracy Capital Sector]",
+    "category": [
+      "[Kleptocracy Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Kleptocracy Capital Sector",
+    "name": "Leave the Sector [Kleptocracy Capital Sector]",
+    "category": [
+      "[Kleptocracy Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Geniocracy Coreworlds Sector",
+    "name": "Get Past the \"Guard\" [Geniocracy Coreworlds Sector]",
+    "category": [
+      "[Geniocracy Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Geniocracy Coreworlds Sector]",
+    "region": "Geniocracy Coreworlds Sector",
+    "category": [
+      "[Geniocracy Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Geniocracy Coreworlds Sector]",
+    "region": "Geniocracy Coreworlds Sector",
+    "category": [
+      "[Geniocracy Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Geniocracy Science District Sector",
+    "name": "Get Past the \"Guard\" [Geniocracy Science District Sector]",
+    "category": [
+      "[Geniocracy Science District Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Geniocracy Science District Sector]",
+    "region": "Geniocracy Science District Sector",
+    "category": [
+      "[Geniocracy Science District Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Geniocracy Science District Sector]",
+    "region": "Geniocracy Science District Sector",
+    "category": [
+      "[Geniocracy Science District Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Spectral Capital Sector",
+    "name": "Get Past the \"Guard\" [Spectral Capital Sector]",
+    "category": [
+      "[Spectral Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Spectral Capital Sector",
+    "name": "Visit a Store [Spectral Capital Sector]",
+    "category": [
+      "[Spectral Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Spectral Capital Sector",
+    "name": "Leave the Sector [Spectral Capital Sector]",
+    "category": [
+      "[Spectral Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Get Past the \"Guard\" [Spectral Wastelands Sector]",
+    "region": "Spectral Wastelands Sector",
+    "category": [
+      "[Spectral Wastelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Spectral Wastelands Sector]",
+    "region": "Spectral Wastelands Sector",
+    "category": [
+      "[Spectral Wastelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Spectral Wastelands Sector]",
+    "region": "Spectral Wastelands Sector",
+    "category": [
+      "[Spectral Wastelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Central Shipyards Sector",
+    "name": "Get Past the \"Guard\" [Central Shipyards Sector]",
+    "category": [
+      "[Central Shipyards Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Central Shipyards Sector]",
+    "region": "Central Shipyards Sector",
+    "category": [
+      "[Central Shipyards Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Duskbringer Stronghold Sector",
+    "name": "Visit a Store [Duskbringer Stronghold Sector]",
+    "category": [
+      "[Duskbringer Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Duskbringer Stronghold Sector",
+    "name": "Leave the Sector [Duskbringer Stronghold Sector]",
+    "category": [
+      "[Duskbringer Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hive Broodworlds Sector",
+    "name": "Get Past the \"Guard\" [Hive Broodworlds Sector]",
+    "category": [
+      "[Hive Broodworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hive Broodworlds Sector",
+    "name": "Visit a Store [Hive Broodworlds Sector]",
+    "category": [
+      "[Hive Broodworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hive Broodworlds Sector",
+    "name": "Leave the Sector [Hive Broodworlds Sector]",
+    "category": [
+      "[Hive Broodworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Imperial New-Homelands Sector",
+    "name": "Get Past the \"Guard\" [Imperial New-Homelands Sector]",
+    "category": [
+      "[Imperial New-Homelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Imperial New-Homelands Sector",
+    "name": "Visit a Store [Imperial New-Homelands Sector]",
+    "category": [
+      "[Imperial New-Homelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Imperial New-Homelands Sector",
+    "name": "Leave the Sector [Imperial New-Homelands Sector]",
+    "category": [
+      "[Imperial New-Homelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Get Past the \"Guard\" [Rebal Stronghold Sector]",
+    "region": "Rebel Stronghold Sector",
+    "category": [
+      "[Rebal Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Rebal Stronghold Sector]",
+    "region": "Rebel Stronghold Sector",
+    "category": [
+      "[Rebal Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Rebel Stronghold Sector",
+    "name": "Leave the Sector [Rebal Stronghold Sector]",
+    "category": [
+      "[Rebal Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Theocracy Homeworlds Sector",
+    "name": "Get Past the \"Guard\" [Theocracy Homeworlds Sector]",
+    "category": [
+      "[Theocracy Homeworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Theocracy Homeworlds Sector]",
+    "region": "Theocracy Homeworlds Sector",
+    "category": [
+      "[Theocracy Homeworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Theocracy Homeworlds Sector]",
+    "region": "Theocracy Homeworlds Sector",
+    "category": [
+      "[Theocracy Homeworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Crystalline Origins Sector",
+    "name": "Get Past the \"Guard\" [Crystalline Origins Sector]",
+    "category": [
+      "[Crystalline Origins Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Crystalline Origins Sector",
+    "name": "Visit a Store [Crystalline Origins Sector]",
+    "category": [
+      "[Crystalline Origins Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Crystalline Origins Sector",
+    "name": "Leave the Sector [Crystalline Origins Sector]",
+    "category": [
+      "[Crystalline Origins Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Royal Kleptocracy Nebula Sector",
+    "name": "Get Past the \"Guard\" [Royal Kleptocracy Nebula Sector]",
+    "category": [
+      "[Royal Kleptocracy Nebula Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Royal Kleptocracy Nebula Sector]",
+    "region": "Royal Kleptocracy Nebula Sector",
+    "category": [
+      "[Royal Kleptocracy Nebula Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Royal Kleptocracy Nebula Sector]",
+    "region": "Royal Kleptocracy Nebula Sector",
+    "category": [
+      "[Royal Kleptocracy Nebula Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "The Jerome Protectorate Sector",
+    "name": "Get Past the \"Guard\" [The Jerome Protectorate Sector]",
+    "category": [
+      "[The Jerome Protectorate Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "The Jerome Protectorate Sector",
+    "name": "Visit a Store [The Jerome Protectorate Sector]",
+    "category": [
+      "[The Jerome Protectorate Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Get Jerry [The Jerome Protectorate Sector]",
+    "region": "The Jerome Protectorate Sector",
+    "category": [
+      "[The Jerome Protectorate Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [The Jerome Protectorate Sector]",
+    "region": "The Jerome Protectorate Sector",
+    "category": [
+      "[The Jerome Protectorate Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Wentworth Headquarters Sector",
+    "name": "Get Past the \"Guard\" [Wentworth Headquaters Sector]",
+    "category": [
+      "[Wentworth Headquaters Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Wentworth Headquarters Sector",
+    "name": "Visit a Store [Wentworth Headquaters Sector]",
+    "category": [
+      "[Wentworth Headquaters Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Wentworth Headquarters Sector",
+    "name": "defeat C.U.R.A. [Wentworth Headquaters Sector]",
+    "category": [
+      "[Wentworth Headquaters Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Wentworth Headquarters Sector",
+    "name": "Leave the Sector [Wentworth Headquaters Sector]",
+    "category": [
+      "[Wentworth Headquaters Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Recovery Site Sector",
+    "name": "Get Past the \"Guard\" [Ancient Recovery Site Sector]",
+    "category": [
+      "[Ancient Recovery Site Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Recovery Site Sector",
+    "name": "Visit Ruins 1/3 [Ancient Recovery Site Sector]",
+    "category": [
+      "[Ancient Recovery Site Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Recovery Site Sector",
+    "name": "Visit Ruins 2/3 [Ancient Recovery Site Sector]",
+    "category": [
+      "[Ancient Recovery Site Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Recovery Site Sector",
+    "name": "Visit Ruins 3/3 [Ancient Recovery Site Sector]",
+    "category": [
+      "[Ancient Recovery Site Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Recovery Site Sector",
+    "name": "Visit a Store [Ancient Recovery Site Sector]",
+    "category": [
+      "[Ancient Recovery Site Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Recovery Site Sector",
+    "name": "Leave the Sector [Ancient Recovery Site Sector]",
+    "category": [
+      "[Ancient Recovery Site Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Wastelands Sector",
+    "name": "Get Past the \"Guard\" [Ancient Wastelands Sector]",
+    "category": [
+      "[Ancient Wastelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Wastelands Sector",
+    "name": "Visit a Store [Ancient Wastelands Sector]",
+    "category": [
+      "[Ancient Wastelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Wastelands Sector",
+    "name": "Leave the Sector [Ancient Wastelands Sector]",
+    "category": [
+      "[Ancient Wastelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hektar Mega-Market (tm) Sector",
+    "name": "Get Past the \"Guard\" [Hektar Mega-Market (tm) Sector]",
+    "category": [
+      "[Hektar Mega-Market (tm) Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Hektar Mega-Market (tm) Sector]",
+    "region": "Hektar Mega-Market (tm) Sector",
+    "category": [
+      "[Hektar Mega-Market (tm) Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hektar Mega-Market (tm) Sector",
+    "name": "Visit Headquarters [Hektar Mega-Market (tm) Sector]",
+    "category": [
+      "[Hektar Mega-Market (tm) Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hektar Mega-Market (tm) Sector",
+    "name": "Find the Capsule [Hektar Mega-Market (tm) Sector]",
+    "category": [
+      "[Hektar Mega-Market (tm) Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hektar Mega-Market (tm) Sector",
+    "name": "Leave the Sector [Hektar Mega-Market (tm) Sector]",
+    "category": [
+      "[Hektar Mega-Market (tm) Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "The Nexus Sector",
+    "name": "Get Past the \"Guard\" [Nexus Sector]",
+    "category": [
+      "[Nexus Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "The Nexus Sector",
+    "name": "ENTER HER DOMAIN ",
+    "category": [
+      "[Nexus Sector]"
+    ],
+    "requires": "|Chaos Mode|"
+  },
+  {
+    "region": "Ancient Wastelands Sector",
+    "name": "Defeat Vance Prime",
+    "victory": true,
+    "category": [
+      "GOAL"
+    ],
+    "requires": "(|Progressive Hacking:2| OR |Progressive Cloaking:2|) AND (|Ancient Wastelands Sector| OR |Withers|"
+  },
+  {
+    "name": "DEFEAT HER",
+    "region": "The Nexus Sector",
+    "victory": true,
+    "category": [
+      "GOAL"
+    ],
+    "requires": "|Chaos Mode| and (|Progressive Hacking:2| OR |Progressive Cloaking:2|)"
+  },
+  {
+    "region": "Infested Sector",
+    "name": "Get Past the \"Guard\" [Infested Sector]",
+    "category": [
+      "[Infested Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Store [Infested Sector]",
+    "region": "Infested Sector",
+    "category": [
+      "[Infested Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Infested Sector",
+    "name": "Leave the Sector [Infested Sector]",
+    "category": [
+      "[Infested Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Node 17 Sector",
+    "name": "Get Past the \"Guard\" [Node 17 Sector]",
+    "category": [
+      "[Node 17 Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Node 17 Sector",
+    "name": "Go to the Judges [Node 17 Sector]",
+    "category": [
+      "[Node 17 Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Node 17 Sector",
+    "name": "Talk to the Mechant [Node 17 Sector]",
+    "category": [
+      "[Node 17 Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Node 17 Sector",
+    "name": "Defeat the Flagship 1/3 [Node 17 Sector]",
+    "category": [
+      "[Node 17 Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat the Flagship 2/3 [Node 17 Sector]",
+    "region": "Node 17 Sector",
+    "category": [
+      "[Node 17 Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat the Flagship 3/3 [Node 17 Sector]",
+    "region": "Node 17 Sector",
+    "category": [
+      "[Node 17 Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Piloting LeveL 1",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:4|"
+  },
+  {
+    "name": "Piloting LeveL 2",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:8|"
+  },
+  {
+    "name": "Engine Level 1",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:4|"
+  },
+  {
+    "name": "Engine Level 2",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:8|"
+  },
+  {
+    "name": "Shield Level 1",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:4|"
+  },
+  {
+    "name": "Shield Level 2",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:8|"
+  },
+  {
+    "name": "Weapons Level 1",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:4|"
+  },
+  {
+    "name": "Weapons Level 2",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:8|"
+  },
+  {
+    "name": "Fighting Level 1",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:4|"
+  },
+  {
+    "name": "Fighting Level 2",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:8|"
+  },
+  {
+    "name": "Repair Level 1",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:4|"
+  },
+  {
+    "name": "Repair Level 2",
+    "region": "Sector 1",
+    "category": [
+      "Crew"
+    ],
+    "requires": "|@Sector:8|"
+  },
+  {
+    "region": "Dynasty Sector",
+    "name": "Get Past the \"Guard\" [Dynasty Sector]",
+    "category": [
+      "[Dynasty Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Visit a Shop [Dynasty Sector]",
+    "region": "Dynasty Sector",
+    "category": [
+      "[Dynasty Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Destroy Dynasty [Dynasty Sector]",
+    "region": "Dynasty Sector",
+    "category": [
+      "[Dynasty Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leave the Sector [Dynasty Sector]",
+    "region": "Dynasty Sector",
+    "category": [
+      "[Dynasty Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Harmony Coreworlds Sector",
+    "name": "Visit the Link [Harmony Coreworlds Sector]",
+    "category": [
+      "[Harmony Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 1/5 [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 2/5 [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 3/5 [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 4/5 [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 5/5 [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Harmony Sector",
+    "name": "Defeat Enimies 1/5 [Harmony Sector]",
+    "category": [
+      "[Harmony Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 2/5 [Harmony Sector]",
+    "region": "Harmony Sector",
+    "category": [
+      "[Harmony Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 3/5 [Harmony Sector]",
+    "region": "Harmony Sector",
+    "category": [
+      "[Harmony Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Harmony Sector",
+    "name": "Defeat Enimies 4/5 [Harmony Sector]",
+    "category": [
+      "[Harmony Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Harmony Sector",
+    "name": "Defeat Enimies 5/5 [Harmony Sector]",
+    "category": [
+      "[Harmony Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 1/5 [Gathering Sector]",
+    "region": "Gathering Sector",
+    "category": [
+      "[Gathering Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 2/5 [Gathering Sector]",
+    "region": "Gathering Sector",
+    "category": [
+      "[Gathering Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 3/5 [Gathering Sector]",
+    "region": "Gathering Sector",
+    "category": [
+      "[Gathering Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Gathering Sector",
+    "name": "Defeat Enimies 4/5 [Gathering Sector]",
+    "category": [
+      "[Gathering Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 5/5 [Gathering Sector]",
+    "region": "Gathering Sector",
+    "category": [
+      "[Gathering Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Free Mantis Sector",
+    "name": "Defeat Enimies 1/5 [Free Mantis Sector]",
+    "category": [
+      "[Free Mantis Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 2/5 [Free Mantis Sector]",
+    "region": "Free Mantis Sector",
+    "category": [
+      "[Free Mantis Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 3/5 [Free Mantis Sector]",
+    "region": "Free Mantis Sector",
+    "category": [
+      "[Free Mantis Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Free Mantis Sector",
+    "name": "Defeat Enimies 4/5 [Free Mantis Sector]",
+    "category": [
+      "[Free Mantis Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 5/5 [Free Mantis Sector]",
+    "region": "Free Mantis Sector",
+    "category": [
+      "[Free Mantis Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Union Sector",
+    "name": "Defeat Enimies 1/5 [Union Sector]",
+    "category": [
+      "[Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 2/5 [Union Sector]",
+    "region": "Union Sector",
+    "category": [
+      "[Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Union Sector",
+    "name": "Defeat Enimies 3/5 [Union Sector]",
+    "category": [
+      "[Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Union Sector",
+    "name": "Defeat Enimies 4/5 [Union Sector]",
+    "category": [
+      "[Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 5/5 [Union Sector]",
+    "region": "Union Sector",
+    "category": [
+      "[Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Outcast Sector",
+    "name": "Defeat Enimies 1/5 [Outcast Sector]",
+    "category": [
+      "[Outcast Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 2/5 [Outcast Sector]",
+    "region": "Outcast Sector",
+    "category": [
+      "[Outcast Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 3/5 [Outcast Sector]",
+    "region": "Outcast Sector",
+    "category": [
+      "[Outcast Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 4/5 [Outcast Sector]",
+    "region": "Outcast Sector",
+    "category": [
+      "[Outcast Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 5/5 [Outcast Sector]",
+    "region": "Outcast Sector",
+    "category": [
+      "[Outcast Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 1/5 [Separatisit Sector]",
+    "region": "Separatisit Sector",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 2/5 [Separatisit Sector]",
+    "region": "Separatisit Sector",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat Enimies 3/5 [Separatisit Sector]",
+    "region": "Separatisit Sector",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Separatisit Sector",
+    "name": "Defeat Enimies 4/5 [Separatisit Sector]",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Separatisit Sector",
+    "name": "Defeat Enimies 5/5 [Separatisit Sector]",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Get Past the \"Gaurd\" [Imperal Sector]",
+    "region": "Imperial Sector",
+    "category": [
+      "[Imperal Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Imperial Sector",
+    "name": "Vist a Shop [Imperal Sector]",
+    "category": [
+      "[Imperal Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Imperial Sector",
+    "name": "Leave the Sector [Imperal Sector}",
+    "category": [
+      "[Imperal Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Sector 1",
+    "name": "Smuggler Event [Sector 1]",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Leah the Beam MASTER [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Doctor Orwell [Sector 1]",
+    "region": "Sector 1",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Tully [Node 17]",
+    "region": "Node 17 Sector",
+    "category": [
+      "[Node 17 Sector]"
+    ],
+    "requires": "(|Federation Embassy Sector| OR |AUG TULLY_PRESENT|) AND |Node 17 Sector| "
+  },
+  {
+    "name": "Haynes [Militia Encampment Sector]",
+    "region": "Militia Encampment Sector",
+    "category": [
+      "[Militia Encampment Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Ellie [Union Coreworlds]",
+    "region": "Union Coreworlds Sector",
+    "category": [
+      "[Union Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Anurak [Duskbringer Stronghold Sector]",
+    "region": "Duskbringer Stronghold Sector",
+    "category": [
+      "[Duskbringer Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Devorak [Duskbringer Stronghold Sector]",
+    "region": "Duskbringer Stronghold Sector",
+    "category": [
+      "[Duskbringer Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Mayeb [Gathering Gardenworlds Sector]",
+    "region": "Gathering Gardenworlds Sector",
+    "category": [
+      "[Gathering Gardenworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Ivar [Confederate Coreworlds Sector]",
+    "region": "Confederate Coreworlds Sector",
+    "category": [
+      "[Confederate Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Ty E'Rel",
+    "category": [
+      "Unique Crew"
+    ],
+    "requires": "|Gathering Gardenworlds Sector| OR |Confederate Coreworlds Sector|"
+  },
+  {
+    "name": "Alkali [Geniocracy Science District Sector]",
+    "region": "Geniocracy Science District Sector",
+    "category": [
+      "[Geniocracy Science District Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Nights OR Slocknog [Royal Kleptocracy Nebula Sector]",
+    "region": "Royal Kleptocracy Nebula Sector",
+    "category": [
+      "[Royal Kleptocracy Nebula Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Billy [Hektar Mega-Market (tm) Sector]",
+    "region": "Hektar Mega-Market (tm) Sector",
+    "category": [
+      "[Hektar Mega-Market (tm) Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Tuco [The Black Market Sector]",
+    "region": "The Black Market Sector",
+    "category": [
+      "[The Black Market Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Ariadne [Lost Sun Stronghold Sector]",
+    "region": "Lost Sun Stronghold Sector",
+    "category": [
+      "[Lost Sun Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Grand Priest of the Eternal Ember and Keeper of the Holy Texts, Lord Vortigon Obadann XIV [Crystalline Origins Sector]",
+    "region": "Crystalline Origins Sector",
+    "category": [
+      "[Crystalline Origins Sector]"
+    ],
+    "requires": "|Progressive Med Bay:3| OR |Progressive Clone Bay:3|"
+  },
+  {
+    "name": "Rig & Tintan [Theocracy Homeworlds Sector]",
+    "region": "Theocracy Homeworlds Sector",
+    "category": [
+      "[Theocracy Homeworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Ruwen [Theocracy Badlands Sector]",
+    "region": "Theocracy Badlands Sector",
+    "category": [
+      "[Theocracy Badlands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Imperial New-Homelands Sector",
+    "name": "Dianesh [Imperial New-Homelands Sector]",
+    "category": [
+      "[Imperial New-Homelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Kazaaakplethkilik [Coalition Stronghold Sector] ",
+    "region": "Coalition Stronghold Sector",
+    "category": [
+      "[Coalition Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Freddy [Hunting Grounds Sector]",
+    "region": "Hunting Grounds Sector",
+    "category": [
+      "[Hunting Grounds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Alkram OR Tyrdeo [Eargen Republic Capital Sector]",
+    "region": "Eargen Republic Capital Sector",
+    "category": [
+      "[Eargen Republic Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Tony Sr. [Eargen Republic Capital Sector]",
+    "region": "Eargen Republic Capital Sector",
+    "category": [
+      "[Eargen Republic Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Guntput [Ministry Capital Sector]",
+    "region": "Ministry Capital Sector",
+    "category": [
+      "[Ministry Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Metyunt [Hektar Mega-Market (tm) Sector]",
+    "region": "Hektar Mega-Market (tm) Sector",
+    "category": [
+      "[Hektar Mega-Market (tm) Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Beacon Eater [Lanius Swarmlands Sector]",
+    "region": "Lanius Swarmlands Sector",
+    "category": [
+      "[Lanius Swarmlands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Anointed [Ancient Recovery Site Sector]",
+    "region": "Ancient Recovery Site Sector",
+    "category": [
+      "[Ancient Recovery Site Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Dessius [Spectral Capital Sector]",
+    "region": "Spectral Capital Sector",
+    "category": [
+      "[Spectral Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "A5540L3 [Central Shipyards Sector]",
+    "region": "Central Shipyards Sector",
+    "category": [
+      "[Central Shipyards Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "OOJ MAJOO [Geniocracy Science District Sector]",
+    "region": "Geniocracy Science District Sector",
+    "category": [
+      "[Geniocracy Science District Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "G.A.S. Queen [Infested Sector]",
+    "region": "Infested Sector",
+    "category": [
+      "[Infested Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Obyn [Guild Territory Sector]",
+    "region": "Guild Territory Sector",
+    "category": [
+      "[Guild Territory Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Traveling Merchant [Obalisk Homeworld]",
+    "region": "Ancient Wastelands Sector",
+    "category": [
+      "[Obalisk Homeworld]"
+    ],
+    "requires": "|Progressive Med Bay:3| OR |Progressive Clone Bay:3|"
+  },
+  {
+    "name": "G-Van [The Nexus Sector]",
+    "region": "The Nexus Sector",
+    "category": [
+      "[The Nexus Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Sector 1",
+    "name": "Conduct a Survey [Sector 1]",
+    "category": [
+      "[Sector 1]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Conduct a Survey [Harmony Sector]",
+    "region": "Harmony Sector",
+    "category": [
+      "[Harmony Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Conduct a Survey [Gathering Sector]",
+    "region": "Gathering Sector",
+    "category": [
+      "[Gathering Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Conduct a Survey [Free Mantis Sector]",
+    "region": "Free Mantis Sector",
+    "category": [
+      "[Free Mantis Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Outcast Sector",
+    "name": "Conduct a Survey [Outcast Sector]",
+    "category": [
+      "[Outcast Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Union Sector",
+    "name": "Conduct a Survey [Union Sector]",
+    "category": [
+      "[Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Separatisit Sector",
+    "name": "Conduct a Survey [Separatisit Sector]",
+    "category": [
+      "[Separatisit Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Confederate Sector",
+    "name": "Conduct a Survey [Confederate Sector]",
+    "category": [
+      "[Confederate Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Pirate [Sale!] Sector",
+    "name": "Conduct a Survey [Pirate [Sale!] Sector]",
+    "category": [
+      "[Pirate [Sale!] Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Geniocracy Sector",
+    "name": "Conduct a Survey [Geniocracy Sector]",
+    "category": [
+      "[Geniocracy Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Republican [Sale!] Sector",
+    "name": "Conduct a Survey [Republican [Sale!] Sector]",
+    "category": [
+      "[Republican [Sale!] Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Vagabond Sector",
+    "name": "Conduct a Survey [Vagabond Sector]",
+    "category": [
+      "[Vagabond Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Dynasty Sector",
+    "name": "Conduct a Survey [Dynasty Sector]",
+    "category": [
+      "[Dynasty Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Kleptocracy [Sale!] Sector",
+    "name": "Conduct a Survey [Kleptocracy [Sale!] Sector]",
+    "category": [
+      "[Kleptocracy [Sale!] Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Auto Sector",
+    "name": "Conduct a Survey [Auto Sector]",
+    "category": [
+      "[Auto Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Coalition Sector",
+    "name": "Conduct a Survey [Coalition Sector]",
+    "category": [
+      "[Coalition Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Duskbringer Sector",
+    "name": "Conduct a Survey [Duskbringer Sector]",
+    "category": [
+      "[Duskbringer Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hive Sector",
+    "name": "Conduct a Survey [Hive Sector]",
+    "category": [
+      "[Hive Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Rebel Sector",
+    "name": "Conduct a Survey [Rebel Sector]",
+    "category": [
+      "[Rebel Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Theocracy Sector",
+    "name": "Conduct a Survey [Theocracy Sector]",
+    "category": [
+      "[Theocracy Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Abandoned [Sale!] Sector",
+    "name": "Conduct a Survey [Abandoned [Sale!] Sector]",
+    "category": [
+      "[Abandoned [Sale!] Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Mining Sector",
+    "name": "Conduct a Survey [Mining Sector]",
+    "category": [
+      "[Mining Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Unexplored Sector",
+    "name": "Conduct a Survey [Unexplored Sector]",
+    "category": [
+      "[Unexplored Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Federation Embassy Sector",
+    "name": "Conduct a Survey [Federation Embassy Sector]",
+    "category": [
+      "[Federation Embassy Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Gathering Gardenworlds Sector",
+    "name": "Conduct a Survey [Gathering Gardenworlds Sector]",
+    "category": [
+      "[Gathering Gardenworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Harmony Coreworlds Sector",
+    "name": "Conduct a Survey [Harmony Coreworlds Sector]",
+    "category": [
+      "[Harmony Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hunting Grounds Sector",
+    "name": "Conduct a Survey [Hunting Grounds Sector]",
+    "category": [
+      "[Hunting Grounds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Conduct a Survey [Militia Encampment Sector]",
+    "region": "Militia Encampment Sector",
+    "category": [
+      "[Militia Encampment Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Conduct a Survey [Theocracy Badlands Sector]",
+    "region": "Theocracy Badlands Sector",
+    "category": [
+      "[Theocracy Badlands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Union Coreworlds Sector",
+    "name": "Conduct a Survey [Union Coreworlds Sector]",
+    "category": [
+      "[Union Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Confederate Coreworlds Sector",
+    "name": "Conduct a Survey [Confederate Coreworlds Sector]",
+    "category": [
+      "[Confederate Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Emancipated Sanctuary Sector",
+    "name": "Conduct a Survey [Emancipated Sanctuary Sector]",
+    "category": [
+      "[Emancipated Sanctuary Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Guild Territory Sector",
+    "name": "Conduct a Survey [Guild Territory Sector]",
+    "category": [
+      "[Guild Territory Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Illesctrian Oasis Sector",
+    "name": "Conduct a Survey [Illesctrian Oasis Sector]",
+    "category": [
+      "[Illesctrian Oasis Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hacked Union Sector",
+    "name": "Conduct a Survey [Hacked Union Sector]",
+    "category": [
+      "[Hacked Union Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ministry Capital Sector",
+    "name": "Conduct a Survey [Ministry Capital Sector]",
+    "category": [
+      "[Ministry Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ministry Sector",
+    "name": "Conduct a Survey [Ministry Sector]",
+    "category": [
+      "[Ministry Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Lanius Swarmlands Sector",
+    "name": "Conduct a Survey [Lanius Swarmlands Sector]",
+    "category": [
+      "[Lanius Swarmlands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Lost Sun Stronghold Sector",
+    "name": "Conduct a Survey [Lost Sun Stronghold Sector]",
+    "category": [
+      "[Lost Sun Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "The Black Market Sector",
+    "name": "Conduct a Survey [The Black Market Sector]",
+    "category": [
+      "[The Black Market Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Coalition Stronghold Sector",
+    "name": "Conduct a Survey [Coalition Stronghold Sector]",
+    "category": [
+      "[Coalition Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Eargen Republic Capital Sector",
+    "name": "Conduct a Survey [Eargen Republic Capital Sector]",
+    "category": [
+      "[Eargen Republic Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Kleptocracy Capital Sector",
+    "name": "Conduct a Survey [Kleptocracy Capital Sector]",
+    "category": [
+      "[Kleptocracy Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Geniocracy Coreworlds Sector",
+    "name": "Conduct a Survey [Geniocracy Coreworlds Sector]",
+    "category": [
+      "[Geniocracy Coreworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Geniocracy Science District Sector",
+    "name": "Conduct a Survey [Geniocracy Science District Sector]",
+    "category": [
+      "[Geniocracy Science District Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Spectral Capital Sector",
+    "name": "Conduct a Survey [Spectral Capital Sector]",
+    "category": [
+      "[Spectral Capital Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Spectral Wastelands Sector",
+    "name": "Conduct a Survey [Spectral Wastelands Sector]",
+    "category": [
+      "[Spectral Wastelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Central Shipyards Sector",
+    "name": "Conduct a Survey [Central Shipyards Secrtor]",
+    "category": [
+      "[Central Shipyards Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Duskbringer Stronghold Sector",
+    "name": "Conduct a Survey [Duskbringer Stronghold Sector]",
+    "category": [
+      "[Duskbringer Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Hive Broodworlds Sector",
+    "name": "Conduct a Survey [Hive Broodworlds Sector]",
+    "category": [
+      "[Hive Broodworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Imperial New-Homelands Sector",
+    "name": "Conduct a Survey [Imperial New-Homelands Sector]",
+    "category": [
+      "[Imperial New-Homelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Rebel Stronghold Sector",
+    "name": "Conduct a Survey [Rebal Stronghold Sector]",
+    "category": [
+      "[Rebal Stronghold Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Theocracy Homeworlds Sector",
+    "name": "Conduct a Survey [Theocracy Homeworlds Sector]",
+    "category": [
+      "[Theocracy Homeworlds Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Crystalline Origins Sector",
+    "name": "Conduct a Survey [Crystalline Origins Sector]",
+    "category": [
+      "[Crystalline Origins Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Royal Kleptocracy Nebula Sector",
+    "name": "Conduct a Survey [Royal Kleptocracy Nebula Sector]",
+    "category": [
+      "[Royal Kleptocracy Nebula Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "The Jerome Protectorate Sector",
+    "name": "Conduct a Survey [The Jerome Protectorate Sector]",
+    "category": [
+      "[The Jerome Protectorate Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Wentworth Headquarters Sector",
+    "name": "Conduct a Survey [Wentworth Headquarters Sector]",
+    "category": [
+      "[Wentworth Headquaters Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Recovery Site Sector",
+    "name": "Conduct a Survey [Ancient Recovery Site Sector]",
+    "category": [
+      "[Ancient Recovery Site Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Wastelands Sector",
+    "name": "Conduct a Survey [Ancient Wastelands Sector]",
+    "category": [
+      "[Ancient Wastelands Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Wastelands Sector",
+    "name": "Conduct a Survey [Obalisk Homeworld]",
+    "category": [
+      "[Obalisk Homeworld]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Conduct a Survey [Hektar Mega-Market (tm) Sector]",
+    "region": "Hektar Mega-Market (tm) Sector",
+    "category": [
+      "[Hektar Mega-Market (tm) Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "The Nexus Sector",
+    "name": "Conduct a Survey [The Nexus Sector]",
+    "category": [
+      "[The Nexus Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Node 17 Sector",
+    "name": "Conduct a Survey [Node 17 Sector]",
+    "category": [
+      "[Node 17 Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Conduct a Survey [Infested Sector]",
+    "region": "Infested Sector",
+    "category": [
+      "[Infested Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Imperial Sector",
+    "name": "Conduct a Survey [Imperial Sector]",
+    "category": [
+      "[Imperal Sector]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Wastelands Sector",
+    "name": "Get past the \"Gaurd\" [Obalisk Homeworld]",
+    "category": [
+      "[Obalisk Homeworld]"
+    ],
+    "requires": []
+  },
+  {
+    "region": "Ancient Wastelands Sector",
+    "name": "Visit a Store [Obalisk Homeworld]",
+    "category": [
+      "[Obalisk Homeworld]"
+    ],
+    "requires": []
+  },
+  {
+    "name": "Defeat the Royal Dreadnaught [Obalisk Homeworld]",
+    "region": "Ancient Wastelands Sector",
+    "category": [
+      "[Obalisk Homeworld]"
+    ],
+    "requires": []
+  }
+]
