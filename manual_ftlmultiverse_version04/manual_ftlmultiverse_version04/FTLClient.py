@@ -138,7 +138,6 @@ class FTLContext(CommonContext):
     # not currently functional
     async def update(self):
         while not self.exit_event.is_set():
-            self.log(f"Update loop running at {time.time()}")
             self.check_message_from_mod()
             await asyncio.sleep(0.1)
 
@@ -194,7 +193,9 @@ class FTLContext(CommonContext):
         self.memory_interface = MemoryInterface(self.exe_path, self)
 
     def check_message_from_mod(self):
-        self.log(f"Recieved message: {self.memory_interface.check_message()}")
+        message = self.memory_interface.check_message()
+        if message is not None:
+            self.log(f"Recieved message: {message}")
 
     def send_message_to_mod(self, msg: str):
         self.memory_interface.send_message(msg)
@@ -256,8 +257,15 @@ async def main(args):
         ctx.run_gui()
     ctx.run_cli()
     progression_watcher = asyncio.create_task(
-        game_watcher(ctx), name="ManualProgressionWatcher")
+        game_watcher(ctx), name="FTLProgressionWatcher")
+
+    ctx.update_task = asyncio.create_task(
+        ctx.update(), name="FTLUpdateLoop")
+
     ctx.setup_memory()
+
+    # start the update loop
+    ctx.update()
 
     await ctx.exit_event.wait()
     ctx.server_address = None
