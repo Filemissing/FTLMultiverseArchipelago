@@ -27,8 +27,12 @@ class FTLClientCommandProcessor(ClientCommandProcessor):
         super(FTLClientCommandProcessor, self).output(text)
 
     def _cmd_check(self):
-        """manually check for new messages from the mod"""
-        self.ctx.check_message_from_mod()
+        """manually check the contents of the modToClient vector"""
+        self.ctx.log(self.ctx.memory_interface.read_vector(self.ctx.memory_interface.modToClient_address))
+
+    def _cmd_check2(self):
+        """manually check the contents of the clientToMod vector"""
+        self.ctx.log(self.ctx.memory_interface.read_vector(self.ctx.memory_interface.clientToMod_address))
 
     @mark_raw
     def _cmd_message(self, message: str) -> bool:
@@ -193,9 +197,9 @@ class FTLContext(CommonContext):
         self.memory_interface = MemoryInterface(self.exe_path, self)
 
     def check_message_from_mod(self):
-        message = self.memory_interface.check_message()
-        if message is not None:
-            self.log(f"Recieved message: {message}")
+        messages = self.memory_interface.check_messages()
+        for msg_id, msg in messages:
+            self.log(msg)
 
     def send_message_to_mod(self, msg: str):
         self.memory_interface.send_message(msg)

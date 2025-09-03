@@ -1,6 +1,7 @@
 from ast import Not
 from operator import not_
 import os
+from unittest import result
 import pymem
 import struct
 import re
@@ -42,23 +43,41 @@ class MemoryInterface:
             self.client.log("Failed to find one or both vector addresses.")
 
         # initialize variables
-        self.last_message = None
+        self.vector_size = 4096
+        self.vector_metadata_size = 2 # last written index of that vector, last read index for the opposing vector
+        self.message_metadata_size = 2 # index of the message, length of the message body
+
+        self.clientToMod_freeSpace = self.vector_size - self.vector_metadata_size
+        self.clientToMod_queue = []
+        self.clientToMod_writeIndex = -1
+
+        self.modToClient_readIndex = -1
 
     # Public functions
-    def check_message(self) -> str:
-        message = self.read_vector(self.modToClient_address)
+    def check_messages(self):
+        messages = self.split_messages(self.modToClient_address)
 
-        if self.last_message == None or self.last_message != message:
-            self.last_message = message
-            return message
-        else: 
-            return None
+        new_messages = []
 
+        for message_id, message_body in messages:
+            if message_id > self.modToClient_readIndex:
+                message = self.decode(message_body)
+                new_messages.append((message_id, message))
+
+                # update metadata
+                self.modToClient_readIndex = message_id
+                self.update_read_index()
+
+        return new_messages
 
     def send_message(self, message: str):
-        self.clear_vector(self.clientToMod_address)
+        if self.append_message(message):
+            self.client.log(f"Sent message: {message}")
+        else:
+            self.client.log(f"Message queued: {message}")
 
-        self.write_vector(self.clientToMod_address, self.encode(message))
+    def remove_old_messages(self):
+        pass
 
     # Internal Functions
     def encode(self, string: str) -> list[int]:
@@ -76,25 +95,87 @@ class MemoryInterface:
                 break
         return ''.join(chars)
 
+    def clear_messages(self):
+        for i in range(self.vector_metadata_size, self.vector_size):
+            self.write_int(self.clientToMod_address, i, 0)
+
+    def generate_message(self, message: str) -> list[int]:
+        encoded = self.encode(message)
+        result = [self.clientToMod_writeIndex, len(encoded)]
+        result.extend(encoded)
+
+        return result
+
+    def append_message(self, message: str):
+        if len(message) + self.message_metadata_size > self.clientToMod_freeSpace:
+            self.clientToMod_queue.append(message)
+            self.client.log(f"Not enough space to send message: {message}. Message queued.")
+            return False
+
+        self.clientToMod_writeIndex += 1 # increment message index
+
+        message_data = self.generate_message(message)
+
+        start_index = self.vector_size - self.clientToMod_freeSpace
+
+        for i in range(len(message_data)):
+            self.write_int(self.clientToMod_address, start_index + i, message_data[i])
+
+        self.clientToMod_freeSpace -= len(message_data)
+
+        self.update_write_index() # update metadata in memory
+
+        return True
+
+    def split_messages(self, vector_address: int) -> list[(int, str)]:
+        messages = []
+        vector_data = self.read_vector(vector_address)
+        i = self.vector_metadata_size # Start after metadata
+        while i < self.vector_size:
+            message_id = vector_data[i]
+            message_length = vector_data[i + 1]
+            if message_length <= 0 or message_id < 0:
+                break
+
+            message_body = vector_data[i + 2 : i + 2 + message_length]
+
+            messages.append((message_id, message_body))
+
+            i += 2 + message_length  # Move to the next message
+        return messages
+
+    def update_read_index(self):
+        self.write_int(self.clientToMod_address, 1, self.modToClient_readIndex)
+
+    def update_write_index(self):
+        self.write_int(self.clientToMod_address, 0, self.clientToMod_writeIndex)
+
+    # Internal Helper Functions
+    def read_int(self, vector_address: int, index: int) -> int:
+        data_ptr = self.get_data_pointer(vector_address)
+        address = data_ptr + index * 4
+        data = self.pm.read_bytes(address, 4)
+        value = struct.unpack("<i", data)[0]
+        return value
+    def write_int(self, vector_address: int, index: int, value: int):
+        data_ptr = self.get_data_pointer(vector_address)
+        address = data_ptr + index * 4
+        packed = struct.pack("<i", value)
+        self.pm.write_bytes(address, packed, len(packed))
+
+    def read_vector(self, address: int, length: int=4096) -> list[int]:
+        data_ptr = self.get_data_pointer(address)
+        data_bytes = self.pm.read_bytes(data_ptr, length * 4)
+        return struct.unpack(f"<{length}i", data_bytes)
+    
+
+    # Helper to get the data pointer from a std::vector structure
     def get_data_pointer(self, address: int) -> int:
         data_ptr_bytes = self.pm.read_bytes(address, 4)
         data_ptr = struct.unpack("<i", data_ptr_bytes)[0]
         return data_ptr
-
-    def read_vector(self, address: int, length: int=1024) -> str:
-        data_ptr = self.get_data_pointer(address)
-        data_bytes = self.pm.read_bytes(data_ptr, length * 4)
-        string = self.decode(struct.unpack(f"<{length}i", data_bytes))
-        return string
-
-    def write_vector(self, address: int, values: list[int]):
-        data_ptr = self.get_data_pointer(address)
-        packed = struct.pack(f"<{len(values)}i", *values)
-        self.pm.write_bytes(data_ptr, packed, len(packed))
-
-    def clear_vector(self, address, length=1024):
-        self.write_vector(address, [0] * length)
-
+    
+    # Launches the process if not running, and waits for it to be available for pymem
     def launch_and_wait_for_process(self, process_name, exe_path, timeout=10) -> pymem.Pymem:
         try:
             return pymem.Pymem(process_name)
