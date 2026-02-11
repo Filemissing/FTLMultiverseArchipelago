@@ -1,0 +1,343 @@
+{
+  "Sector 1": {
+    "starting": true,
+    "connects_to": [
+      "Harmony Sector",
+      "Gathering Sector",
+      "Free Mantis Sector",
+      "Outcast Sector",
+      "Union Sector",
+      "Separatisit Sector",
+      "Confederate Sector",
+      "Pirate [Sale!] Sector",
+      "Geniocracy Sector",
+      "Republican [Sale!] Sector",
+      "Vagabond Sector",
+      "Dynasty Sector",
+      "Kleptocracy [Sale!] Sector",
+      "Auto Sector",
+      "Coalition Sector",
+      "Duskbringer Sector",
+      "Hive Sector",
+      "Rebel Sector",
+      "Theocracy Sector",
+      "Abandoned [Sale!] Sector",
+      "Mining Sector",
+      "Unexplored Sector",
+      "Federation Embassy Sector",
+      "Gathering Gardenworlds Sector",
+      "Harmony Coreworlds Sector",
+      "Hunting Grounds Sector",
+      "Militia Encampment Sector",
+      "Theocracy Badlands Sector",
+      "Union Coreworlds Sector",
+      "Confederate Coreworlds Sector",
+      "Emancipated Sanctuary Sector",
+      "Guild Territory Sector",
+      "Illesctrian Oasis Sector",
+      "Hacked Union Sector",
+      "Ministry Capital Sector",
+      "Lanius Swarmlands Sector",
+      "Lost Sun Stronghold Sector",
+      "The Black Market Sector",
+      "Coalition Stronghold Sector",
+      "Eargen Republic Capital Sector",
+      "Kleptocracy Capital Sector",
+      "Geniocracy Coreworlds Sector",
+      "Geniocracy Science District Sector",
+      "Spectral Capital Sector",
+      "Spectral Wastelands Sector",
+      "Central Shipyards Sector",
+      "Duskbringer Stronghold Sector",
+      "Hive Broodworlds Sector",
+      "Imperial New-Homelands Sector",
+      "Rebel Stronghold Sector",
+      "Theocracy Homeworlds Sector",
+      "Crystalline Origins Sector",
+      "Royal Kleptocracy Nebula Sector",
+      "The Jerome Protectorate Sector",
+      "Wentworth Headquarters Sector",
+      "Ancient Recovery Site Sector",
+      "Ancient Wastelands Sector",
+      "Hektar Mega-Market (tm) Sector",
+      "The Nexus Sector",
+      "Infested Sector",
+      "Node 17 Sector",
+      "Ministry Sector",
+      "Imperial Sector"
+    ],
+    "requires": []
+  },
+  "Harmony Sector": {
+    "connects_to": [
+      "Ancient Recovery Site Sector"
+    ],
+    "requires": "|Harmony Sector|"
+  },
+  "Gathering Sector": {
+    "connects_to": [],
+    "requires": "|Gathering Sector|"
+  },
+  "Free Mantis Sector": {
+    "connects_to": [],
+    "requires": "|Free Mantis Sector|"
+  },
+  "Outcast Sector": {
+    "connects_to": [],
+    "requires": "|Outcast Sector|"
+  },
+  "Union Sector": {
+    "connects_to": [],
+    "requires": "|Union Sector|"
+  },
+  "Separatisit Sector": {
+    "connects_to": [
+      "Ancient Recovery Site Sector"
+    ],
+    "requires": "|Separatisit Sector|"
+  },
+  "Confederate Sector": {
+    "connects_to": [],
+    "requires": "|Confederate Sector|"
+  },
+  "Pirate [Sale!] Sector": {
+    "connects_to": [
+      "Hektar Mega-Market (tm) Sector"
+    ],
+    "requires": "|Pirate [Sale!] Sector|"
+  },
+  "Geniocracy Sector": {
+    "connects_to": [],
+    "requires": "|Geniocracy Sector|"
+  },
+  "Republican [Sale!] Sector": {
+    "connects_to": [
+      "Hektar Mega-Market (tm) Sector"
+    ],
+    "requires": "|Republican [Sale!] Sector|"
+  },
+  "Vagabond Sector": {
+    "connects_to": [],
+    "requires": "|Vagabond Sector|"
+  },
+  "Dynasty Sector": {
+    "connects_to": [],
+    "requires": "|Dynasty Sector|"
+  },
+  "Kleptocracy [Sale!] Sector": {
+    "connects_to": [
+      "Hektar Mega-Market (tm) Sector"
+    ],
+    "requires": "|Kleptocracy [Sale!] Sector|"
+  },
+  "Auto Sector": {
+    "connects_to": [],
+    "requires": "|Auto Sector|"
+  },
+  "Coalition Sector": {
+    "connects_to": [],
+    "requires": "|Coalition Sector|"
+  },
+  "Duskbringer Sector": {
+    "connects_to": [],
+    "requires": "|Duskbringer Sector|"
+  },
+  "Hive Sector": {
+    "connects_to": [],
+    "requires": "|Hive Sector|"
+  },
+  "Rebel Sector": {
+    "connects_to": [],
+    "requires": "|Rebel Sector|"
+  },
+  "Theocracy Sector": {
+    "connects_to": [],
+    "requires": "|Theocracy Sector|"
+  },
+  "Abandoned [Sale!] Sector": {
+    "connects_to": [
+      "Hektar Mega-Market (tm) Sector"
+    ],
+    "requires": "|Abandoned [Sale!] Sector|"
+  },
+  "Mining Sector": {
+    "connects_to": [],
+    "requires": "|Mining Sector|"
+  },
+  "Unexplored Sector": {
+    "connects_to": [],
+    "requires": "|Unexplored Sector|"
+  },
+  "Federation Embassy Sector": {
+    "connects_to": [],
+    "requires": "|Federation Embassy Sector|"
+  },
+  "Gathering Gardenworlds Sector": {
+    "connects_to": [],
+    "requires": "|Gathering Gardenworlds Sector| AND |Gathering Sector|"
+  },
+  "Harmony Coreworlds Sector": {
+    "connects_to": [
+      "Ancient Recovery Site Sector"
+    ],
+    "requires": "|Harmony Coreworlds Sector| AND |Harmony Sector|"
+  },
+  "Hunting Grounds Sector": {
+    "connects_to": [],
+    "requires": "|Hunting Grounds Sector| AND |Free Mantis Sector|"
+  },
+  "Militia Encampment Sector": {
+    "connects_to": [],
+    "requires": "|Militia Encampment Sector| AND |Union Sector|"
+  },
+  "Theocracy Badlands Sector": {
+    "connects_to": [],
+    "requires": "|Theocracy Badlands Sector| AND |Outcast Sector|"
+  },
+  "Union Coreworlds Sector": {
+    "connects_to": [],
+    "requires": "|Union Coreworlds Sector| AND |Union Sector|"
+  },
+  "Confederate Coreworlds Sector": {
+    "connects_to": [],
+    "requires": "|Confederate Coreworlds Sector| AND |Gathering Sector|"
+  },
+  "Emancipated Sanctuary Sector": {
+    "connects_to": [
+      "Ancient Recovery Site Sector"
+    ],
+    "requires": "|Emancipated Sanctuary Sector| AND |Separatisit Sector|"
+  },
+  "Guild Territory Sector": {
+    "connects_to": [],
+    "requires": "|Guild Territory Sector| AND (|Kleptocracy [Sale!] Sector| OR |Republican [Sale!] Sector| OR |Pirate [Sale!] Sector| OR |Abandoned [Sale!] Sector|)"
+  },
+  "Illesctrian Oasis Sector": {
+    "connects_to": [],
+    "requires": "|Illesctrian Oasis Sector| AND (|Kleptocracy [Sale!] Sector| OR |Republican [Sale!] Sector| OR |Pirate [Sale!] Sector| OR |Abandoned [Sale!] Sector|)"
+  },
+  "Hacked Union Sector": {
+    "connects_to": [],
+    "requires": "|Hacked Union Sector| AND |Union Sector|"
+  },
+  "Ministry Capital Sector": {
+    "connects_to": [],
+    "requires": "|Ministry Capital Sector| AND (|Ministry Sector| OR |Duskbringer Sector|)"
+  },
+  "Ministry Sector": {
+    "connects_to": [],
+    "requires": "|Ministry Sector|"
+  },
+  "Lanius Swarmlands Sector": {
+    "connects_to": [],
+    "requires": "|Lanius Swarmlands Sector| AND (|Harmony Sector| OR |Separatisit Sector| OR |Abandoned [Sale!] Sector|)"
+  },
+  "Lost Sun Stronghold Sector": {
+    "connects_to": [],
+    "requires": "|Lost Sun Stronghold Sector| AND |Outcast Sector|"
+  },
+  "The Black Market Sector": {
+    "connects_to": [],
+    "requires": "|The Black Market Sector| AND (|Kleptocracy [Sale!] Sector| OR |Republican [Sale!] Sector| OR |Pirate [Sale!] Sector| OR |Abandoned [Sale!] Sector|)"
+  },
+  "Coalition Stronghold Sector": {
+    "connects_to": [],
+    "requires": "|Coalition Stronghold Sector| AND |Coalition Sector|"
+  },
+  "Eargen Republic Capital Sector": {
+    "connects_to": [],
+    "requires": "|Eargen Republic Capital Sector| AND |Republican [Sale!] Sector|"
+  },
+  "Kleptocracy Capital Sector": {
+    "connects_to": [],
+    "requires": "|Kleptocracy Capital Sector| AND |Kleptocracy [Sale!] Sector|"
+  },
+  "Geniocracy Coreworlds Sector": {
+    "connects_to": [],
+    "requires": "|Geniocracy Coreworlds Sector| AND |Geniocracy Sector|"
+  },
+  "Geniocracy Science District Sector": {
+    "connects_to": [],
+    "requires": "|Geniocracy Science District Sector| AND |Geniocracy Sector|"
+  },
+  "Spectral Capital Sector": {
+    "connects_to": [],
+    "requires": "|Spectral Capital Sector| AND (|Dynasty Sector| OR |Vagabond Sector|)"
+  },
+  "Spectral Wastelands Sector": {
+    "connects_to": [],
+    "requires": "|Spectral Wastelands Sector| OR (|Dynasty Sector| OR |Vagabond Sector|)"
+  },
+  "Central Shipyards Sector": {
+    "connects_to": [],
+    "requires": "|Central Shipyards Sector| AND (|Auto Sector| OR |Rebel Sector|)"
+  },
+  "Duskbringer Stronghold Sector": {
+    "connects_to": [],
+    "requires": "|Duskbringer Stronghold Sector| AND (|Ministry Sector| OR |Duskbringer Sector|)"
+  },
+  "Hive Broodworlds Sector": {
+    "connects_to": [],
+    "requires": "|Hive Broodworlds Sector| AND (|Hive Sector| OR |Free Mantis Sector|)"
+  },
+  "Imperial New-Homelands Sector": {
+    "connects_to": [],
+    "requires": "|Imperial New-Homelands Sector| AND (|Theocracy Sector| OR |Outcast Sector|)"
+  },
+  "Rebel Stronghold Sector": {
+    "connects_to": [],
+    "requires": "|Rebel Stronghold Sector| AND (|Auto Sector| OR |Rebel Sector|)"
+  },
+  "Theocracy Homeworlds Sector": {
+    "connects_to": [],
+    "requires": "|Theocracy Homeworlds Sector| AND (|Theocracy Sector| OR |Outcast Sector|)"
+  },
+  "Crystalline Origins Sector": {
+    "connects_to": [],
+    "requires": "|Crystalline Origins Sector| AND (|Theocracy Homeworlds Sector| OR |Theocracy Badlands Sector|)"
+  },
+  "Royal Kleptocracy Nebula Sector": {
+    "connects_to": [],
+    "requires": "|Royal Kleptocracy Nebula Sector| AND (|Kleptocracy Capital Sector| OR |Kleptocracy [Sale!] Sector|)"
+  },
+  "The Jerome Protectorate Sector": {
+    "connects_to": [],
+    "requires": "|The Jerome Protectorate Sector| AND (|Rebel Stronghold Sector| OR |Central Shipyards Sector| OR |Auto Sector| OR |Rebel Sector|)"
+  },
+  "Wentworth Headquarters Sector": {
+    "connects_to": [],
+    "requires": "|Wentworth Headquarters Sector| AND |CURA's Hard Tasks|"
+  },
+  "Ancient Recovery Site Sector": {
+    "connects_to": [
+      "Ancient Wastelands Sector"
+    ],
+    "requires": "|Ancient Recovery Site Sector| AND (|Harmony Coreworlds Sector| OR |Harmony Sector| OR |Emancipated Sanctuary Sector| OR |Separatisit Sector|)"
+  },
+  "Ancient Wastelands Sector": {
+    "connects_to": [],
+    "requires": "|Ancient Wastelands Sector| AND |Withers| AND |AETHER TRANSLATOR|"
+  },
+  "Hektar Mega-Market (tm) Sector": {
+    "connects_to": [
+      "The Nexus Sector"
+    ],
+    "requires": "|Hektar Mega-Market (tm) Sector| AND (|Kleptocracy [Sale!] Sector| OR |Republican [Sale!] Sector| OR |Pirate [Sale!] Sector| OR |Abandoned [Sale!] Sector|)"
+  },
+  "The Nexus Sector": {
+    "connects_to": [],
+    "requires": "|The Nexus Sector| AND |Hektar Mega-Market (tm) Sector| AND (|Kleptocracy [Sale!] Sector| OR |Republican [Sale!] Sector| OR |Pirate [Sale!] Sector| OR |Abandoned [Sale!] Sector|)"
+  },
+  "Node 17 Sector": {
+    "connects_to": [],
+    "requires": "|Node 17 Sector| AND |@Sector:12|"
+  },
+  "Infested Sector": {
+    "connects_to": [],
+    "requires": "|Infested Sector|"
+  },
+  "Imperial Sector": {
+    "connects_to": [],
+    "requires": "|Imperial Sector|"
+  }
+}
