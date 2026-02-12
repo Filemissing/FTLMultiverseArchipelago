@@ -9,7 +9,7 @@ components.append(
     Component(
         "FTL: Multiverse Client",
         func=run_client,
-        game_name="FTLMultiverse",
+        game_name="FTL: Multiverse",
         component_type=Type.CLIENT,
         supports_uri=True,
     )

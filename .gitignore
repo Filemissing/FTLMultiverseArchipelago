@@ -10,3 +10,5 @@ info/.obsidian
 mods/Super Magic Hat 1.2.2
 *.apworld
 *.zip
+apworld/client/__pycache__
+apworld/__pycache__

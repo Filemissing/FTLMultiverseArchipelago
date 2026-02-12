@@ -12,8 +12,8 @@ from CommonClient import get_base_parser, handle_url_arg
 # Copy things from here at your own risk.
 
 
-def launch_ap_quest_client(*args: Sequence[str]) -> None:
-    from .ap_quest_client import main
+def launch_client(*args: Sequence[str]) -> None:
+    from .client import main
 
     parser = get_base_parser()
     parser.add_argument("--name", default=None, help="Slot Name to connect as.")

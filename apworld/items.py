@@ -14,7 +14,7 @@ ITEM_NAME_TO_ID: dict[str, int] = {}
 DEFAULT_ITEM_CLASSIFICATIONS: dict[str, ItemClassification] = {}
 
 class FTLMultiverseItem(Item):
-    game = "FTLMultiverse"
+    game = "FTL: Multiverse"
 
 def get_random_filler_item_name(world: FTLMultiverseWorld) -> str:
     item_data = load_json("data/items.json")

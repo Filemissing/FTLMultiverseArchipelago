@@ -15,7 +15,6 @@ from . import __name__ as package_name
 from .utils import load_json
 
 def create_and_connect_regions(world: FTLMultiverseWorld) -> None:
-
     data = load_json(package_name, "data/sectors.json")
 
     # Create and connect starting region and abstract hub

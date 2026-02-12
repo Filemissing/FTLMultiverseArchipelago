@@ -1,9 +1,7 @@
 {
-  // this is a list of in-game sector id's categorized by their type according to the "Super Magic Hat" mod which is used for sector navigation.
+  "abstract_hub_region": "SMH_HUB",
 
-  "abstract_hub_region": "SMH_HUB", // this isn't a sector but represents the player's ability to use the SMH dialogue window to navigate to other sectors from any other sector.
-
-  "starting_sector": "CIVILIAN_SECTOR", // better known as the multiverse droppoint,
+  "starting_sector": "CIVILIAN_SECTOR",
 
   "generic": [
     "SECTOR_UNION",

@@ -1,5 +1,4 @@
 {
-  // min-max ranges for default locations, they are needed for building the constant id lookup table
   "repeating": [
     {
       "name": "Shop",
@@ -14,25 +13,14 @@
       "min": 0,
       "max": 50,
       "can_split": true
-    },
-    {
-      "name": "Sylvan",
-      "option_name": "sylvan_amount",
-      "min": 0,
-      "max": 20,
-      "can_split": true
     }
   ],
 
   "unique": [
     {
-      "name": "example",
-      "choicebox_id": "EXAMPLE_CHOICEBOX",
-      "sector_id": "EXAMPLE_SECTOR", // enter the id of the hub region for always available locations
-      "requires": {
-        "type": "all", // valid types are "any" and "all"
-        "items": [ "EXAMPLE_ITEM" ]
-      }
+      "name": "Sylvan gift start",
+      "choicebox_id": "SYLVAN_GIFT",
+      "sector_id": "CIVILIAN_SECTOR"
     }
   ],
 
@@ -40,7 +28,7 @@
     {
       "name": "Multiverse victory",
       "option_name": "option_multiverse",
-      "choicebox_ids": [ "BOSS_DESTROYED" ] // some endings may have multiple sub-endings with different ids
+      "choicebox_ids": [ "BOSS_DESTROYED" ]
     },
     {
       "name": "Peace ending",

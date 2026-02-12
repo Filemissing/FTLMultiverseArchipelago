@@ -2,10 +2,10 @@
   "items": [
     {
       "name": "Sherlock Haynes",
-      "id": "unique_haynes",            // in-game id where applicable
-      "type": "crew",                   // in-game type
-      "amount": 1,                      // optional, defaults to 1
-      "classifications": [ "useful" ]   // ap classification
+      "id": "unique_haynes",
+      "type": "crew",
+      "amount": 1,
+      "classifications": [ "useful" ]
     },
     {
       "name": "Jerome 'Jerry' Wentworth",

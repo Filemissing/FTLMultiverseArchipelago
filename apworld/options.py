@@ -36,22 +36,15 @@ class ShopAmount(Range):
     """The amount of shops checks, this is global or per sector depending on SplitDefaultLocations option"""
     display_name = "Shop Amount"
     default = 10
-    range_start = locations_data[0]["min"]
-    range_end = locations_data[0]["max"]
+    range_start = locations_data["repeating"][0]["min"]
+    range_end = locations_data["repeating"][0]["max"]
 
 class CombatAmount(Range):
     """The amount of combat checks, this is global or per sector depending on SplitDefaultLocations option"""
     display_name = "Combat Amount"
     default = 20
-    range_start = locations_data[1]["min"]
-    range_end = locations_data[1]["max"]
-
-class SylvanAmount(Range):
-    """The amount of Sylvan shop checks, this is global or per sector depending on SplitDefaultLocations option"""
-    display_name = "Sylvan Amount"
-    default = 10
-    range_start = locations_data[2]["min"]
-    range_end = locations_data[2]["max"]
+    range_start = locations_data["repeating"][1]["min"]
+    range_end = locations_data["repeating"][1]["max"]
 
 class FillerTrapChance(Range):
     """The chance for a filler item to be a trap"""
@@ -68,5 +61,4 @@ class FTLMultiverseOptions(PerGameCommonOptions):
     split_default_locations: SplitDefaultLocations
     shop_amount: ShopAmount
     combat_amount: CombatAmount
-    sylvan_amount: SylvanAmount
     filler_trap_chance: FillerTrapChance

@@ -15,7 +15,7 @@ class FTLMultiverseWorld(World):
     FTL: Multiverse is a mod for FTL that adds over 300 new playable ships, over 200 new weapons and drones, and over 30 brand new sectors to explore.
     """
 
-    game = "FTLMultiverse"
+    game = "FTL: Multiverse"
 
     # The WebWorld is a definition class that governs how this world will be displayed on the website.
     # it's not necessary yet unless we want to get core-verified
@@ -27,7 +27,7 @@ class FTLMultiverseWorld(World):
     location_name_to_id = locations.LOCATION_NAME_TO_ID
     item_name_to_id = items.ITEM_NAME_TO_ID
 
-    origin_region_name = load_json("data/secors.json")["starting_sector"]
+    origin_region_name = load_json("data/sectors.json")["starting_sector"]
 
     def create_regions(self) -> None:
         regions.create_and_connect_regions(self)
@@ -39,15 +39,8 @@ class FTLMultiverseWorld(World):
     def create_items(self) -> None:
         items.create_all_items(self)
 
-    def create_item(self, name: str) -> items.APQuestItem:
+    def create_item(self, name: str) -> items.FTLMultiverseItem:
         return items.create_item_with_correct_classification(self, name)
 
     def get_filler_item_name(self) -> str:
         return items.get_random_filler_item_name(self)
-
-    # There may be data that the game client will need to modify the behavior of the game.
-    # This is what slot_data exists for. Upon every client connection, the slot's slot_data is sent to the client.
-    # slot_data is just a dictionary using basic types, that will be converted to json when sent to the client.
-    def fill_slot_data(self) -> Mapping[str, Any]:
-        # If you need access to the player's chosen options on the client side, there is a helper for that.
-        
