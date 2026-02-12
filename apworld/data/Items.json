@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "name": "Sherlock Haynes",
+      "id": "unique_haynes",            // in-game id where applicable
+      "type": "crew",                   // in-game type
+      "amount": 1,                      // optional, defaults to 1
+      "classifications": [ "useful" ]   // ap classification
+    },
+    {
+      "name": "Jerome 'Jerry' Wentworth",
+      "id": "unique_jerry",
+      "type": "crew",
+      "amount": 1,
+      "classifications": [ "useful" ]
+    }
+  ],
+
+  "fillers": [
+    {
+      "name": "Starting scrap",
+      "id": "scrap",
+      "type": "resource",
+      "amount": 20
+    }
+  ],
+
+  "traps": [
+    {
+      "name": "Breaches",
+      "type": "ship",
+      "amount": 5
+    }
+  ]
+}
