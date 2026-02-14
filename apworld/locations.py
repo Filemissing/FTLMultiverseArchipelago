@@ -34,9 +34,9 @@ def create_regular_locations(world: FTLMultiverseWorld) -> None:
             if world.options.split_default_locations and repeating_location["can_split"]:
                 for sector in sector_data["generic"] + sector_data["unique"]:
                     region = world.get_region(sector)
-                    region.add_location(get_location_names_with_ids([sector + " " + repeating_location["name"] + " " + str(i + 1)]), FTLMultiverseLocation)
+                    region.add_locations(get_location_names_with_ids([sector + " " + repeating_location["name"] + " " + str(i + 1)]), FTLMultiverseLocation)
             else:
-                hub.add_location(get_location_names_with_ids([repeating_location["name"] + " " + str(i + 1)]), FTLMultiverseLocation)
+                hub.add_locations(get_location_names_with_ids([repeating_location["name"] + " " + str(i + 1)]), FTLMultiverseLocation)
 
     # create unique locations
     for unique_location in location_data["unique"]:
@@ -45,7 +45,7 @@ def create_regular_locations(world: FTLMultiverseWorld) -> None:
             continue
 
         region = world.get_region(sector_id)
-        region.add_location(get_location_names_with_ids([unique_location["name"]]), FTLMultiverseLocation)
+        region.add_locations(get_location_names_with_ids([unique_location["name"]]), FTLMultiverseLocation)
 
 def create_events(world: FTLMultiverseWorld) -> None:
     sector_data = load_json("data/sectors.json")

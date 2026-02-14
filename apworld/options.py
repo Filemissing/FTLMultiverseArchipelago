@@ -1,10 +1,14 @@
 from dataclasses import dataclass
 
-from Options import Choice, OptionGroup, PerGameCommonOptions, Range, Toggle, DefaultOnToggle
+from Options import Choice, OptionGroup, PerGameCommonOptions, Range, Toggle, DefaultOnToggle, DeathLink
 
 from .utils import load_json
 
 locations_data = load_json("data/locations.json")
+
+class FTLDeathLink(DeathLink):
+    """Enable death link?"""
+    display_name = "Death link"
 
 class Ending(Choice):
     """ The ending that is required for completion"""
@@ -49,12 +53,13 @@ class CombatAmount(Range):
 class FillerTrapChance(Range):
     """The chance for a filler item to be a trap"""
     display_name = "Filler Trap Chance"
-    default = 0
+    default = 50
     range_start = 0
     range_end = 100
 
 @dataclass
 class FTLMultiverseOptions(PerGameCommonOptions):
+    death_link: FTLDeathLink
     ending: Ending
     unique_ship_victories: UniqueShipVictories
     include_secret: IncludeSecret

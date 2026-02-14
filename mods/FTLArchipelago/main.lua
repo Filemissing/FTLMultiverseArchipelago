@@ -20,6 +20,9 @@ function OnInit(newGame)
 
     -- reference important classes
     Global = Hyperspace.Global.GetInstance()
+    PlayerShipManager = Global:GetShipManager(0)
+    PlayerShipManagerExtend = PlayerShipManager.PlayerShipManagerExtend
+
     CApp = Global:GetCApp()
     WorldManager = CApp.world
     StarMap = WorldManager.starMap
@@ -39,9 +42,15 @@ function MonitorSector()
     end
 end
 
+function MonitorPlayerDeath()
+    if PlayerShipManagerExtend:GetIsDying() then
+        Communication.SendMessage("DEATH")
+    end
+end
+
 -- handles all events that create a choicebox
 function OnPostCreateChoiceBox(choiceBox, event)
-    Communication.SendMessage(event.eventName)
+    Communication.SendMessage("CHOICE|"..event.eventName)
 end
 
 -- resgister functions

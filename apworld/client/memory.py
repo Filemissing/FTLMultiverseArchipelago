@@ -76,9 +76,6 @@ class MemoryInterface:
         else:
             self.client.log(f"Message queued: {message}")
 
-    def remove_old_messages(self):
-        pass
-
     # Internal Functions
     def encode(self, string: str) -> list[int]:
         ints = []
