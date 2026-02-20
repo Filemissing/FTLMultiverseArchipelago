@@ -27,7 +27,6 @@ function OnInit(newGame)
     WorldManager = CApp.world
     StarMap = WorldManager.starMap
     CurrentSector = nil
-
 end
 function OnTick()
     Communication.CheckMessages()

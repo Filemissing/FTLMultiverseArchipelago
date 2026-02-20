@@ -1,11 +1,13 @@
 import asyncio
 import sys
 from argparse import Namespace
+from tabnanny import check
 from tkinter import Tk, filedialog
 from typing import Any
 
 from CommonClient import CommonContext, ClientCommandProcessor, gui_enabled, server_loop
 import Utils
+from worlds import network_data_package
 
 from .memory import MemoryInterface
 from ..utils import load_json
@@ -21,8 +23,13 @@ class FTLMultiverseContext(CommonContext):
 
     client_loop: asyncio.Task[None]
 
+    datapackage_checksums: dict[str, str] | None = None
+
     slot_data: dict[str, Any]
     death_link: bool = False
+
+    location_name_to_id: dict[str, int] = None
+    item_name_to_id: dict[str, int] = None
 
     item_data = load_json("data/items.json")
     location_data = load_json("data/locations.json")
@@ -41,10 +48,22 @@ class FTLMultiverseContext(CommonContext):
     def on_package(self, cmd: str, args: dict):
         super().on_package(cmd, args)
         if cmd == "Connected":
+            # update death link from slot data
             self.slot_data = args["slot_data"]
             self.death_link = bool(self.slot_data["death_link"])
             self.log(f"Death Link = {self.death_link}")
             Utils.async_start(self.update_death_link(self.death_link))
+
+            # get id tables from datapackage
+            game_package = network_data_package["games"][self.game]
+
+            if not game_package:
+                self.log(f"couldn't get {self.game} from datapackage")
+
+            self.location_name_to_id = game_package["location_name_to_id"]
+            self.item_name_to_id = game_package["item_name_to_id"]
+
+            self.log("Name->ID tables initialized from network_data_package")
 
         if cmd == "RecievedItems":
             pass
@@ -59,13 +78,17 @@ class FTLMultiverseContext(CommonContext):
             choicebox_id = args[0]
             self.log(choicebox_id)
             locations = [loc["name"] for loc in self.location_data["unique"] if loc["choicebox_id"] == choicebox_id]
+            for loc in locations:
+                self.log(loc)
             if len(locations) > 0:
-                ids = [self.location_names[loc] for loc in locations]
-                await self.check_locations()
+                ids = [self.location_name_to_id[loc] for loc in locations if loc in self.location_name_to_id]
+                await self.check_locations(ids)
         if cmd == "LOCATION":
-            await self.check_locations([self.location_names[args[0]]])
+            await self.check_locations([self.location_name_to_id[args[0]]])
         if cmd == "DEATH":
             await self.send_death()
+        if cmd == "EXIT":
+            self.exit_event.set() # this doesn't seem to work yet
 
     async def shutdown(self):
         super().shutdown()
