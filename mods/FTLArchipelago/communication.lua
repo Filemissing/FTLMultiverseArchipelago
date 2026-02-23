@@ -37,7 +37,14 @@ function Communication.HandleMessage(id, msg)
     if(id <= ClientToMod_readIndex)then
         return -- message has already been processed
     end
-    Communication.Log("Recieved Message: "..id.."|"..msg)
+    Communication.Log("Recieved Message: "..id..": "..msg)
+
+    local parts = SplitString(msg, "|")
+    local cmd = table.remove(parts, 1) -- removes and returns value of cmd
+    local args = parts -- cmd has already been removed
+
+    Main.OnClientMessage(cmd, args)
+
     ClientToMod_readIndex = id -- update readIndex (assumes ascending order handling)
     UpdateReadIndex(ModToClient_vector, ClientToMod_readIndex)
 end
@@ -52,7 +59,7 @@ function Communication.CheckMessages()
 end
 function Communication.SendMessage(message)
     if Communication.AppendMessage(message) then
-        -- if the message was sent successfully
+        Communication.Log("Message sent: " .. message)
     else
         Communication.Log("Message queued: " .. message)
     end
@@ -69,6 +76,14 @@ end
 -- helper functions
 function Communication.Log(msg)
     log(Prefix .. msg)
+end
+
+function SplitString(str, sep)
+    local result = {}
+    for part in string.gmatch(str, "([^" .. sep .. "]+)") do
+        table.insert(result, part)
+    end
+    return result
 end
 
 function Communication.Encode(str)

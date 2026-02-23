@@ -9,6 +9,8 @@ import psutil
 import subprocess
 import time
 
+import pymem.exception
+
 
 class MemoryInterface:
     def __init__(self, exe_path, client, process_name="FTLGame.exe"):
@@ -149,22 +151,40 @@ class MemoryInterface:
 
     # Internal Helper Functions
     def read_int(self, vector_address: int, index: int) -> int:
-        data_ptr = self.get_data_pointer(vector_address)
-        address = data_ptr + index * 4
-        data = self.pm.read_bytes(address, 4)
-        value = struct.unpack("<i", data)[0]
-        return value
+        try:
+            data_ptr = self.get_data_pointer(vector_address)
+            address = data_ptr + index * 4
+            data = self.pm.read_bytes(address, 4)
+            value = struct.unpack("<i", data)[0]
+            return value
+        except (pymem.exception.ProcessError, pymem.exception.MemoryReadError):
+            self.client.log("FTL Process was ended")
+            self.client.request_exit()
+        except Exception as e:
+            self.client.log(f"Unexpected memory error while reading: {type(e)}: {e}")
+            
     def write_int(self, vector_address: int, index: int, value: int):
-        data_ptr = self.get_data_pointer(vector_address)
-        address = data_ptr + index * 4
-        packed = struct.pack("<i", value)
-        self.pm.write_bytes(address, packed, len(packed))
+        try:
+            data_ptr = self.get_data_pointer(vector_address)
+            address = data_ptr + index * 4
+            packed = struct.pack("<i", value)
+            self.pm.write_bytes(address, packed, len(packed))
+        except (pymem.exception.ProcessError, pymem.exception.MemoryReadError):
+            self.client.log("FTL Process was ended")
+            self.client.request_exit()
+        except Exception as e:
+            self.client.log(f"Unexpected memory error while writng: {type(e)}: {e}")
 
     def read_vector(self, address: int, length: int=4096) -> list[int]:
-        data_ptr = self.get_data_pointer(address)
-        data_bytes = self.pm.read_bytes(data_ptr, length * 4)
-        return struct.unpack(f"<{length}i", data_bytes)
-    
+        try:
+            data_ptr = self.get_data_pointer(address)
+            data_bytes = self.pm.read_bytes(data_ptr, length * 4)
+            return struct.unpack(f"<{length}i", data_bytes)
+        except (pymem.exception.ProcessError, pymem.exception.MemoryReadError):
+            self.client.log("FTL Process was ended")
+            self.client.request_exit()
+        except Exception as e:
+            self.client.log(f"Unexpected memory error while reading vector: {type(e)}: {e}")
 
     # Helper to get the data pointer from a std::vector structure
     def get_data_pointer(self, address: int) -> int:

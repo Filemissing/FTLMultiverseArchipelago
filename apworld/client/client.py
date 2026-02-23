@@ -1,4 +1,4 @@
-import asyncio
+﻿import asyncio
 import sys
 from argparse import Namespace
 from tabnanny import check
@@ -14,7 +14,9 @@ from ..utils import load_json
 
 
 class FTLMultiverseClientCommandProcessor(ClientCommandProcessor):
-    pass
+    def _cmd_simulate_death(self) -> bool:
+        self.ctx.send_message_to_mod("DEATH")
+        return True
 
 class FTLMultiverseContext(CommonContext):
     command_processor = FTLMultiverseClientCommandProcessor
@@ -69,30 +71,49 @@ class FTLMultiverseContext(CommonContext):
             pass
 
     async def update(self):
-        while not self.exit_event.is_set():
-            await self.check_message_from_mod()
-            await asyncio.sleep(0.1)
+        try:
+            while not self.exit_event.is_set():
+                await self.check_message_from_mod()
+                await asyncio.sleep(0.1)
+        except asyncio.CancelledError:
+            # Do NOT re-raise here
+            self.log("Update loop externally cancelled")
+        finally:
+            self.log("Update loop stopped")
 
     async def on_mod_message(self, cmd: str, args: list[str] | None):
+        self.log(f"{cmd}: {str(args)}")
         if cmd == "CHOICE":
             choicebox_id = args[0]
-            self.log(choicebox_id)
+            # self.log(choicebox_id)
             locations = [loc["name"] for loc in self.location_data["unique"] if loc["choicebox_id"] == choicebox_id]
             for loc in locations:
                 self.log(loc)
             if len(locations) > 0:
                 ids = [self.location_name_to_id[loc] for loc in locations if loc in self.location_name_to_id]
                 await self.check_locations(ids)
-        if cmd == "LOCATION":
+        elif cmd == "LOCATION":
             await self.check_locations([self.location_name_to_id[args[0]]])
-        if cmd == "DEATH":
+        elif cmd == "DEATH":
+            self.log("recieved death")
             await self.send_death()
-        if cmd == "EXIT":
-            self.exit_event.set() # this doesn't seem to work yet
+        else:
+            self.log(f"recieved unknown command: {cmd} with arguments {str(args)}")
 
     async def shutdown(self):
-        super().shutdown()
-        self.send_message_to_mod("EXIT")
+        try:
+            self.send_message_to_mod("EXIT")
+        except (Exception, BaseException) as e:
+            raise
+        finally:
+            self.log("can't send shutdown to mod")
+        
+        await super().shutdown()
+
+    def request_exit(self):
+        if self.ui:
+            self.ui.stop()
+        self.exit_event.set()
 
     # ----------------------------------------------------------------
     # Methods relating to mod communication and memory module
