@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "name": "Sherlock Haynes",
+      "id": "unique_haynes",
+      "type": "crew",
+      "amount": 1,
+      "classifications": [ "useful" ]
+    },
+    {
+      "name": "Jerome 'Jerry' Wentworth",
+      "id": "unique_jerry",
+      "type": "crew",
+      "amount": 1,
+      "classifications": [ "useful" ]
+    }
+  ],
+
+  "fillers": [
+    {
+      "name": "Starting scrap",
+      "id": "scrap",
+      "type": "resource",
+      "amount": 20
+    }
+  ],
+
+  "traps": [
+    {
+      "name": "Breaches",
+      "type": "ship",
+      "amount": 5
+    }
+  ]
+}

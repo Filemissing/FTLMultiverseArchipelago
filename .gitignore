@@ -6,3 +6,10 @@ mods/Multiverse.5.5.-.Assets.Patch.above.Data.zip
 mods/Multiverse.5.5.-.Data.zip
 ftlman.exe
 settings.json
+info/.obsidian
+mods/Super Magic Hat 1.2.2
+*.apworld
+*.zip
+apworld/client/__pycache__
+apworld/__pycache__
+docs/.obsidian

@@ -1,0 +1,44 @@
+{
+  "repeating": [
+    {
+      "name": "Shop",
+      "option_name": "shop_amount",
+      "min": 0,
+      "max": 30,
+      "can_split": true
+    },
+    {
+      "name": "Combat reward",
+      "option_name": "combat_amount",
+      "min": 0,
+      "max": 50,
+      "can_split": true
+    }
+  ],
+
+  "unique": [
+    {
+      "name": "Sylvan gift start",
+      "choicebox_id": "SYLVAN_GIFT",
+      "sector_id": "CIVILIAN_SECTOR"
+    }
+  ],
+
+  "endings": [
+    {
+      "name": "Multiverse victory",
+      "option_name": "option_multiverse",
+      "choicebox_ids": [ "BOSS_DESTROYED" ]
+    },
+    {
+      "name": "Peace ending",
+      "option_name": "option_peace",
+      "choicebox_ids": [ "BOSS_TEXT_2 384 385" ]
+    },
+    {
+      "name": "Slug ending",
+      "option_name": "option_slug",
+      "choicebox_ids": [ "KNIGHT_PALACE_THEFT 9582 9583" ]
+    }
+  ]
+}

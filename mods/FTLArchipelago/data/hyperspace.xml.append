@@ -1,3 +1,4 @@
 <scripts>
+	<script>communication.lua</script>
 	<script>main.lua</script>
 </scripts>
