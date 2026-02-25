@@ -1,7 +1,0 @@
-{
-  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
-  "game": "FTLMultiverse",
-  "creator": "Version04",
-  "filler_item_name": "EVENT FREE_ITEM",
-  "starting_items": []
-}

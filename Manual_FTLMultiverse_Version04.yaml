@@ -1,8 +1,0 @@
-name: Version04
-description: Default template created by the Manual Builder tool
-
-game: FTLArchipelago
-
-FTLArchipelago:
-    progression_balancing: 50
-    accessibility: items
