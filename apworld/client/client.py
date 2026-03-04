@@ -1,7 +1,6 @@
 ﻿import asyncio
 import sys
 from argparse import Namespace
-from tabnanny import check
 from tkinter import Tk, filedialog
 from typing import Any
 
@@ -37,6 +36,8 @@ class FTLMultiverseContext(CommonContext):
     location_data = load_json("data/locations.json")
     sector_data = load_json("data/sectors.json")
 
+    location_queue: list[str] = [] # TODO: store this in cache so locations are never lost
+
     def __init__(self, server_address: str | None = None, password: str | None = None) -> None:
         super().__init__(server_address, password)
 
@@ -65,21 +66,28 @@ class FTLMultiverseContext(CommonContext):
             self.location_name_to_id = game_package["location_name_to_id"]
             self.item_name_to_id = game_package["item_name_to_id"]
 
-            self.log("Name->ID tables initialized from network_data_package")
-
-        if cmd == "RecievedItems":
-            pass
-
     async def update(self):
         try:
             while not self.exit_event.is_set():
+
                 await self.check_message_from_mod()
+                await self.try_send_locations()
+                await self.process_new_items()
+
                 await asyncio.sleep(0.1)
-        except asyncio.CancelledError:
+
+        except (Exception, BaseException) as e:
             # Do NOT re-raise here
-            self.log("Update loop externally cancelled")
+            if type(e) == asyncio.CancelledError:
+                self.log("Update loop externally cancelled")
+            else:
+                self.log(f"Unexpected Exception: {str(e)}")
+
         finally:
             self.log("Update loop stopped")
+
+    async def process_new_items(self):
+        pass
 
     async def on_mod_message(self, cmd: str, args: list[str] | None):
         self.log(f"{cmd}: {str(args)}")
@@ -90,21 +98,42 @@ class FTLMultiverseContext(CommonContext):
             for loc in locations:
                 self.log(loc)
             if len(locations) > 0:
-                ids = [self.location_name_to_id[loc] for loc in locations if loc in self.location_name_to_id]
-                await self.check_locations(ids)
+                self.location_queue.extend(locations)
+
         elif cmd == "LOCATION":
-            await self.check_locations([self.location_name_to_id[args[0]]])
+            location = args[0]
+            if not location in self.location_name_to_id:
+                self.log(f"location {location} is not registered in the name to id table")
+                return
+
+            self.location_queue.extend([self.location_name_to_id[location]])
+
         elif cmd == "DEATH":
             self.log("recieved death")
             await self.send_death()
+
         else:
             self.log(f"recieved unknown command: {cmd} with arguments {str(args)}")
+
+    async def try_send_locations(self):
+        if self.server and not self.server.socket.closed and self.location_name_to_id != None: # if connected to server
+            if len(self.location_queue) > 0:    
+                ids = [self.location_name_to_id[loc] for loc in self.location_queue if loc in self.location_name_to_id]
+                if len(ids) > 0:
+                    await self.check_locations(ids)
+                    self.location_queue.clear()
+
+    async def disconnect(self, allow_autoreconnect: bool = False):
+        await super().disconnect(allow_autoreconnect)
+        # clear lookup tables, while these should always be the same for every version, we should be safe and only use the ones recieved from server on connect
+        self.location_name_to_id = None
+        self.item_name_to_id = None
 
     async def shutdown(self):
         try:
             self.send_message_to_mod("EXIT")
         except (Exception, BaseException) as e:
-            raise
+            pass # assume mod has already shut down
         finally:
             self.log("can't send shutdown to mod")
         
