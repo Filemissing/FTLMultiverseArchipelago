@@ -1,0 +1,2055 @@
+<FTL>
+
+	<mod:findName type="event" name="REROUTE_MENU">
+		<mod:findLike type="choice">
+			<mod:selector req="magical_hat_active"/>
+			<mod:setAttributes req="smh_superhat_active"/>
+			<mod:findLike type="event">
+				<mod:setAttributes load="SMH_REROUTE_MENU_HAT"/>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findName>
+
+	<event name="SMH_REROUTE_MENU_HAT">
+		<text>Should you wish it, the magic hat will allow you to travel to any sector you wish.</text>
+		<choice hidden="true" max_group="0">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+			</event>
+		</choice>
+		<choice hidden="true" max_group="1">
+			<text>Look for a Generic Sector.</text>
+			<event load="SMH_REROUTE_MENU_HAT_GENERIC"/>
+		</choice>
+		<choice hidden="true" max_group="1">
+			<text>Look for a Unique Sector.</text>
+			<event load="REROUTE_MENU_HAT"/>
+		</choice>
+		<choice hidden="true" max_group="1">
+			<text>Look for a Secret Sector.</text>
+			<event load="SMH_REROUTE_MENU_HAT_SECRET"/>
+		</choice>
+	</event>
+
+	
+	<mod:findName type="event" name="REROUTE_MENU_HAT">
+		<mod:findWithChildLike type="choice" child-type="text">
+			<mod:selector>Nevermind.</mod:selector>
+			<mod:findLike type="event">
+				<mod:findLike type="loadEvent">
+					<mod:setValue>SMH_REROUTE_MENU_HAT</mod:setValue>
+				</mod:findLike>
+			</mod:findLike>
+		</mod:findWithChildLike>
+		<mod:findLike type="text">
+			<mod:setValue>You consider your options for a unique sector.</mod:setValue>
+		</mod:findLike>
+	</mod:findName>
+	
+	<!--
+	<mod:findName type="event" name="REROUTE_MENU_HAT">
+		<mod:findLike type="choice">
+			<mod:removeTag/>
+		</mod:findLike>
+		<mod-append:choice hidden="true" max_group="0">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+			</event>
+		</mod-append:choice>
+		<mod-append:choice hidden="true" max_group="1">
+			<text>Look for a Generic Sector.</text>
+			<event load="SMH_REROUTE_MENU_HAT_GENERIC"/>
+		</mod-append:choice>
+		<mod-append:choice hidden="true" max_group="1">
+			<text>Look for a Unique Sector.</text>
+			<event load="SMH_REROUTE_MENU_HAT_UNIQUE"/>
+		</mod-append:choice>
+		<mod-append:choice hidden="true" max_group="1">
+			<text>Look for a Secret Sector.</text>
+			<event load="SMH_REROUTE_MENU_HAT_SECRET"/>
+		</mod-append:choice>
+	</mod:findName>
+	-->
+
+	<mod:findName type="event" name="REROUTE_MENU_LASTSTAND"> <!--Patch below reroute frenzy to be able to use this beyond node 17-->
+		<mod:findLike type="choice">
+			<mod:selector req="magical_hat_active"/>
+			<mod:setAttributes req="smh_superhat_active"/>
+			<mod:findLike type="event">
+				<mod:setAttributes load="SMH_REROUTE_MENU_HAT"/>
+			</mod:findLike>
+		</mod:findLike>
+	</mod:findName>
+		
+	<event name="SMH_REROUTE_MENU_HAT_GENERIC">
+		<text>You consider your options for a generic sector.</text>
+		<choice hidden="true" max_group="0">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>SMH_REROUTE_MENU_HAT</loadEvent>
+			</event>
+		</choice>
+		<choice req="SECTOR_UNION" hidden="true">
+			<text>Go to a Union sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_UNION_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_FEDERATION" hidden="true">
+			<text>Go to a Federation sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_FEDERATION_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_HARMONY" hidden="true">
+			<text>Go to a Harmony sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ENGI_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_MINISTRY" hidden="true">
+			<text>Go to a Ministry sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ZOLTAN_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_GATHERING" hidden="true">
+			<text>Go to a Gathering sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ORCHID_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_CONFEDERATE" hidden="true">
+			<text>Go to a Confederate sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_VAMPWEED_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_FREEMANTIS" hidden="true">
+			<text>Go to a Free Mantis sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_FREEMANTIS_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_IMPERIAL" hidden="true">
+			<text>Go to an Imperial sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_CRYSTAL_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_OUTCAST" hidden="true">
+			<text>Go to an Outcast sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_OUTCAST_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_SEPERATIST" hidden="true">
+			<text>Go to a Separatist sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_SEPARATIST_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_ABANDONED_GENERIC" hidden="true">
+			<text>Go to an Abandoned sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ABANDONED_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_PIRATE" hidden="true">
+			<text>Go to a Pirate sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_PIRATE_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_REBEL" hidden="true">
+			<text>Go to a Rebel sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_REBEL_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_AUTO" hidden="true">
+			<text>Go to an Auto sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_AUTO_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_HIVE" hidden="true">
+			<text>Go to a Hive sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_HIVE_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_THEOCRACY" hidden="true">
+			<text>Go to a Theocracy sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ROCK_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_DUSKBRINGER" hidden="true">
+			<text>Go to a Duskbringer sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_DUSK_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_KLEPTOCRACY" hidden="true">
+			<text>Go to a Kleptocracy sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_SLUG_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_GENIOCRACY" hidden="true">
+			<text>Go to a Geniocracy sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_SHELL_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_REPUBLIC" hidden="true">
+			<text>Go to an Eargen sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_LEECH_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_VAGABOND" hidden="true">
+			<text>Go to a Vagabond sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_GHOST_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_DYNASTY" hidden="true">
+			<text>Go to a Dynasty sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_DYNASTY_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_COALITION" hidden="true">
+			<text>Go to a Coalition sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_COALITION_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_ASTEROID_GENERIC" hidden="true">
+			<text>Go to a Mining sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_MINING_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_UNEXPLORED_GENERIC" hidden="true">
+			<text>Go to an Unexplored sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_UNEXPLORED_GENERIC"/>
+		</choice>
+		<choice req="SECTOR_ABANDONED_GENERIC_HEKTAR" hidden="true">
+			<text>Go to an Abandoned Sale sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ABANDONED_SALE"/>
+		</choice>
+		<choice req="SECTOR_PIRATE_HEKTAR" hidden="true">
+			<text>Go to a Pirate Sale sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_PIRATE_SALE"/>
+		</choice>
+		<choice req="SECTOR_KLEPTOCRACY_HEKTAR" hidden="true">
+			<text>Go to a Kleptocracy Sale sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_SLUG_SALE"/>
+		</choice>
+		<choice req="SECTOR_REPUBLIC_HEKTAR" hidden="true">
+			<text>Go to an Eargen Sale sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_LEECH_SALE"/>
+		</choice>
+	</event>
+	
+	
+	<event name="REROUTE_MENU_HAT">
+		<text>You consider your options for a unique sector.</text>
+		<choice hidden="true" max_group="0">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>SMH_REROUTE_MENU_HAT</loadEvent>
+			</event>
+		</choice>
+		<choice req="SECTOR_UNION_UNIQUE" hidden="true">
+			<text>Go to the Union Coreworlds.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_UNION_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_MILITIA_UNIQUE" hidden="true">
+			<text>Go to the Militia Encampment.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_MILITIA_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_FEDERATION_UNIQUE" hidden="true">
+			<text>Go to the Federation Sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_FED_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_HARMONY_UNIQUE" hidden="true">
+			<text>Go to the Harmony Coreworlds.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ENGI_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_MINISTRY_UNIQUE" hidden="true">
+			<text>Go to the Ministry Capital.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ZOLTAN_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_GATHERING_UNIQUE" hidden="true">
+			<text>Go to the Gathering Gardenworlds.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ORCHID_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_CONFEDERATE_UNIQUE" hidden="true">
+			<text>Go to the Confederate Coreworlds.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_VAMPWEED_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_FREEMANTIS_UNIQUE" hidden="true">
+			<text>Go to the Free Mantis Hunting Grounds.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_FREEMANTIS_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_IMPERIAL_UNIQUE" hidden="true">
+			<text>Go to the Imperial New-Homelands.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_CRYSTAL_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_OUTCAST_UNIQUE" hidden="true">
+			<text>Go to the Theocracy Badlands.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_OUTCAST_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_LOSTSUN_UNIQUE" hidden="true">
+			<text>Go to the Lost Sun Stronghold.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_LOSTSUN_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_LANIUS_UNIQUE" hidden="true">
+			<text>Go to the Lanius Swarmlands.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_LANIUS_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_PIRATE_UNIQUE" hidden="true">
+			<text>Go to the Black Market.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_PIRATE_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_HACKER_UNIQUE" hidden="true">
+			<text>Go to the Hacked Union Sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_HACKED_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_REBEL_UNIQUE" hidden="true">
+			<text>Go to the Rebel Stronghold.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_REBEL_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_AUTO_UNIQUE" hidden="true">
+			<text>Go to the Central Shipyards.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_AUTO_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_HIVE_UNIQUE" hidden="true">
+			<text>Go to the Hive Broodworlds.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_HIVE_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_THEOCRACY_UNIQUE" hidden="true">
+			<text>Go to the Theocracy Homeworlds.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ROCK_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_DUSKBRINGER_UNIQUE" hidden="true">
+			<text>Go to the Duskbringer Stronghold.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_DUSK_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_KLEPTOCRACY_UNIQUE" hidden="true">
+			<text>Go to the Kleptocracy Capital.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_SLUG_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_CLAN_UNIQUE" hidden="true">
+			<text>Go to the Guild Territory.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_CLAN_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_STARGROVE_UNIQUE" hidden="true">
+			<text>Go to the Geniocracy Coreworlds.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_STARGROVE"/>
+		</choice>
+		<choice req="SECTOR_GENIOCRACY_UNIQUE" hidden="true">
+			<text>Go to the Geniocracy Coreworlds.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_SHELL_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_MORPH_UNIQUE" hidden="true">
+			<text>Go to the Geniocracy Science District.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_MORPH_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_REPUBLIC_UNIQUE" hidden="true">
+			<text>Go to the Eargen Republic Capital.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_LEECH_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_MONK_UNIQUE" hidden="true">
+			<text>Go to the Illesctrian Oasis.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_MONK_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_VAGABOND_UNIQUE" hidden="true">
+			<text>Go to the Spectral Wastelands.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_GHOST_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_DYNASTY_UNIQUE" hidden="true">
+			<text>Go to the Spectral Capital.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_DYNASTY_UNIQUE"/>
+		</choice>
+		<choice req="SECTOR_COALITION_UNIQUE" hidden="true">
+			<text>Go to the Coalition Stronghold.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_COALITION_UNIQUE"/>
+		</choice>
+	</event>
+
+
+
+	<event name="SMH_REROUTE_MENU_HAT_SECRET">
+		<text>You consider your options for a secret sector.</text>
+		<choice hidden="true" max_group="0">
+			<text>Nevermind.</text>
+			<event>
+				<loadEvent>SMH_REROUTE_MENU_HAT</loadEvent>
+			</event>
+		</choice>
+		<choice req="SECRET_SPIDER" hidden="true">
+			<text>Go to the Infested Sector.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_SPIDER_SECRET"/>
+		</choice>
+		<choice req="SECRET_JERRY" hidden="true">
+			<text>Go to the Jerome Protectorate.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_JERRY_SECRET"/>
+		</choice>
+		<choice req="SECRET_NIGHTS" hidden="true">
+			<text>Go to the Royal Nebula.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_NIGHTS_SECRET"/>
+		</choice>
+		<choice req="SECRET_HEKTAR" hidden="true">
+			<text>Go to the Hektar Mega-Market.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_HEKTAR_SECRET"/>
+		</choice>
+		<choice req="SECRET_ESTATE" hidden="true">
+			<text>Go to the Wentworth Innovations HQ.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ESTATE_SECRET"/>
+		</choice>
+		<choice req="SECRET_ORIGINS" hidden="true">
+			<text>Go to the Crystalline Origins.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_ORIGINS_SECRET"/>
+		</choice>
+		<choice req="SECRET_AUGMENTED" hidden="true">
+			<text>Go to the Ancient Recovery Site.</text>
+			<event load="SMH_LIGHTSPEED_SECTOR_WARP_AUGMENTED_SECRET"/>
+		</choice>
+	</event>
+	
+	
+<!--\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\ Generic \\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_UNION_GENERIC">
+	<text>Name: Union Controlled Sector
+	Type: Friendly
+	Unique: False
+	Dominant Faction: Galactic Union
+	Rebel Threat Level: Medium-Low
+	
+	The Galactic Union is widely mocked for its name - don't be fooled. It's far from galactic, though its leaders would like to make you think it is. The Union is an alliance of many various previously independent corporate states. While primarily populated by humans, the Union has become the sanctuary for many alien refugees during recent times.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_UNION</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+	
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_FEDERATION_GENERIC">
+	<text>Name: Federation Controlled Sector
+Type: Friendly
+Unique: False
+Dominant Faction: The United Federation
+Rebel Threat Level: Medium (Neutral Fleet)
+
+The Federation has rebounded greatly since the days of the Civil War, and its territory is more vibrant than ever. Of course, don't expect it to be absent of hostiles - the Rebellion continues to push hard to regain control of this reality!</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_FEDERATION</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+	
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ENGI_GENERIC">
+	<text>Name: Engi Controlled Sector
+	Type: Friendly
+	Unique: False
+	Dominant Faction: Engi Harmony
+	Rebel Threat Level: Low
+	Locations of Interest: Harmony Link
+
+	The Engi are non-violent and generally friendly with the Federation. As long as you can avoid miscommunication errors, the native inhabitants will be little trouble. The same cannot be said, however, for other hostile invaders.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_HARMONY</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ZOLTAN_GENERIC">
+	<text>Name: Zoltan Controlled Sector
+	Type: Friendly
+	Unique: False
+	Dominant Faction: Zoltan Ministry
+	Rebel Threat Level: Medium-Low
+
+	Tensions between the Federation and Zoltans are high, but the Zoltans ultimately favor law and order over just about anything else. Don't push any buttons, and hopefully the Zoltans will let you pass without issue.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_MINISTRY</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ORCHID_GENERIC">
+	<text>Name: Gathering Controlled Sector
+	Type: Friendly
+	Unique: False
+	Dominant Faction: Orchid Gathering
+	Rebel Threat Level: Low
+
+	The Orchids are a peaceful race, lucky for you. Their specially grown kernel weaponry makes them powerful enemies, so be glad the plants will rarely attack you without you attacking first.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_GATHERING</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_VAMPWEED_GENERIC">
+	<text>Name: Confederacy Controlled Sector
+	Type: Neutral
+	Unique: False
+	Dominant Faction: Vampweed Confederacy
+	Rebel Threat Level: Medium-Low
+
+	While the Confederacy isn't quite your enemy anymore, it is the only democratic nation in the galaxy currently without any representation in the Federation - a fact that has brought much controversy and strained relations between the two.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_CONFEDERATE</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_FREEMANTIS_GENERIC">
+	<text>Name: Free Mantis Controlled Sector
+	Type: Friendly
+	Unique: False
+	Dominant Faction: The Free Mantis
+	Rebel Threat Level: Medium-Low
+
+	The Free Mantis have captured this sector from the Zoltans. Though their addiction to pheromones may degrade their intelligence, the Free Mantis are exceedingly loyal to the Federation.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_FREEMANTIS</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_SEPARATIST_GENERIC">
+	<text>Name: Separatist Controlled Sector
+	Type: Neutral
+	Unique: False
+	Dominant Faction: Engi Separatists
+	Rebel Threat Level: Medium-Low
+
+	The Separatists aren't huge friends to the Federation after they were refused support against the oppressive Harmony trying to stifle them. However, they usually like to keep to themselves, and hopefully won't be of too much issue to you.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_SEPARATIST</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_CRYSTAL_GENERIC">
+	<text>Name: Crystal Controlled Sector
+	Type: Friendly
+	Unique: False
+	Dominant Faction: Crystalline Empire
+	Rebel Threat Level: Medium
+
+	Crystal sectors are usually newly colonized and ever-expanding as their citizens struggle to claim territory for their own. A melting pot of opinions, you can never be certain what the Crystalline people will think of you...</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_IMPERIAL</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_OUTCAST_GENERIC">
+	<text>Name: Outcast Controlled Sector
+	Type: Friendly
+	Unique: False
+	Dominant Faction: Rock Outcasts
+	Rebel Threat Level: Low
+
+	These sectors were once filled with industry and held strongly by the Theocracy. However, in recent times as the Elders' grasp slowly slips from their empire, these lands have become the prime locations for the political dissidents and refugees exiled from their old homes. Apparently, agents sent by the Crystalline Empire working for the "Sister-Species Liberation Group" have taken residence among the outcasts as well.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_OUTCAST</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_FEDERATION_GENERIC"> <!--Unused, but it exists for future update-->
+	<text>Name: Federation Controlled Sector
+	Type: Friendly
+	Unique: False
+	Dominant Faction: The United Federation
+	Rebel Threat Level: Medium (Neutral Fleet)
+	
+	The Federation has rebounded greatly since the days of the Civil War, and its territory is more vibrant than ever. Of course, don't expect it to be absent of hostiles - the Rebellion continues to push hard to regain control of this reality!</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_FEDERATION</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_REBEL_GENERIC">
+	<text>Name: Rebel Controlled Sector
+	Type: Hostile
+	Unique: False
+	Dominant Faction: The Rebellion
+	Rebel Threat Level: Very High
+
+	This old civilian sector has been captured by the Rebellion. Though you'll probably find a few Federation allies left, the bulk of encounters here will be with the Rebellion supporters.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_REBEL</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
++
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_PIRATE_GENERIC">
+	<text>Name: Pirate Controlled Sector
+	Type: Neutral
+	Unique: False
+	Dominant Faction: Pirates
+	Rebel Threat Level: Medium
+
+	Pirate space is no safe spot for any ship. Fortunately, you should have little guilt picking off this sector's inhabitants, considering they'd be just as willing to do the same to you.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_PIRATE</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_HIVE_GENERIC">
+	<text>Name: Mantis Controlled Sector
+	Type: Hostile
+	Unique: False
+	Dominant Faction: Mantis Hive
+	Rebel Threat Level: Low
+
+	Mantis territory is heavily protected by the Hive. Divided into segments overwatched by Suzerains, this sector is no place for a Federation ship.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_HIVE</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ROCK_GENERIC">
+	<text>Name: Rock Controlled Sector
+	Type: Hostile
+	Unique: False
+	Dominant Faction: Rock Theocracy
+	Rebel Threat Level: Low
+
+	The Rock government holds an iron fist over its citizens, and the Rockmen are devoted to their faith. Though ignorant of the truth, and generally aggressive, it's not impossible to avoid a Rockman's wrath.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_THEOCRACY</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_DUSK_GENERIC">
+	<text>Name: Duskbringer Controlled Sector
+	Type: Hostile
+	Unique: False
+	Dominant Faction: Duskbringers
+	Rebel Threat Level: High
+
+	The Duskbringers are much more aggressive than the Zoltan Ministry, and their sectors are a testament to it. Even worse, the Duskbringers and Rebels used to work in junction, and only recently split as the local and interdimensional forces feud over whether to maintain their alliance. It's unlikely you'll see many friendly faces here.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_DUSKBRINGER</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_COALITION_GENERIC">
+	<text>Name: Coalition Controlled Sector
+	Type: Hostile
+	Unique: False
+	Dominant Faction: The Coalition
+	Rebel Threat Level: Medium
+	
+	The Coalition are as much a threat to the Rebellion as the Federation, which could mean you won't find many Rebels here. However, that means little when the Coalition is always lurking about...</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_COALITION</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_AUTO_GENERIC">
+	<text>Name: Automated Shipyards
+	Type: Hostile
+	Unique: False
+	Dominant Faction: The Rebellion
+	Rebel Threat Level: High (Auto Fleet)
+
+	Though this sector belongs to the Rebellion, they have mostly left it to the Engineer Corps to maintain for the time being. Most functions here are completely automated, but even without human Rebels to deal with, that makes their Auto-ships no less a threat.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_AUTO</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ABANDONED_GENERIC">
+	<text>Name: Abandoned Sector
+	Type: Uncolonized
+	Unique: False
+	Dominant Faction: None
+	Rebel Threat Level: Medium
+
+	This was once a civilian sector, but after heavy conflict it was abandoned. Now, it serves as a melting pot of scavengers from all over the galaxy hoping to make a profit off of not just the ruins, but ships like yours as well.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_ABANDONED_GENERIC</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_UNEXPLORED_GENERIC">
+	<text>Name: Nebula Sector
+	Type: Unmapped (Nebula)
+	Unique: False
+	Dominant Faction: None
+	Rebel Threat Level: Medium-Low
+
+	This sector remains uncolonized and largely unmapped. There's no saying what you might find here, and the Atlas provides little more info.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_UNEXPLORED_GENERIC</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_SLUG_GENERIC">
+	<text>Name: Slug Controlled Sector
+	Type: Hostile (Nebula)
+	Unique: False
+	Dominant Faction: Slug Kleptocracy
+	Rebel Threat Level: Low
+
+	The Slugs were exiled from the Federation long ago, but they're little more than indifferent about it. A species of mostly criminals, just about everyone here will want to scam you. Always be on alert as you traverse this nebula, the Slugs are watching...</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_KLEPTOCRACY</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_SHELL_GENERIC">
+	<text>Name: Shell Controlled Sector
+	Type: Friendly (Nebula)
+	Unique: False
+	Dominant Faction: Shell Geniocracy
+	Rebel Threat Level: Medium (Auto Fleet)
+
+	The Shells are usually friendly, but their cultural practices often lead to misunderstandings with races when they attempt to run harmless experiments on abducted crew. Try to be tolerant, and the Shells won't be much of an issue to you.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_GENIOCRACY</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+	
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_LEECH_GENERIC">
+	<text>Name: Leech Controlled Sector
+	Type: Neutral (Hazard)
+	Unique: False
+	Dominant Faction: Eargen Republic
+	Rebel Threat Level: Low
+
+	Don't expect your largest threat here to be the Leeches themselves. Their kind have mostly stayed neutral towards the Federation - the risk lies between the Inquisition and Coalition forces allied with the Republic. Be careful with who you confide in here, and try not to take too much advantage of the downtrodden citizens here.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_REPUBLIC</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_GHOST_GENERIC">
+	<text>Name: Vagabond Nebulae
+	Type: Neutral (Nebula)
+	Unique: False
+	Dominant Faction: Vagabond Clans
+	Rebel Threat Level: Medium
+
+	The Vagabonds are nomadic Ghosts who split off from the Dynasty long ago. While they're mostly indifferent to you, the Dynasty is well known for being incredibly aggressive and cryptic. Be hopeful you don't see much of them here...</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_VAGABOND</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_DYNASTY_GENERIC">
+	<text>Name: Spectral Nebulae
+	Type: Hostile (Nebula)
+	Unique: False
+	Dominant Faction: Spectral Dynasty
+	Rebel Threat Level: High (Auto Fleet)
+
+	Don't expect to see many manned Rebel ships here - the Rebellion's fight against the Ghosts and their Dynasty is almost entirely automated. Unfortunately, the Dynasty seems to hold this invasion against not just the Rebellion, but the Federation as well.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_DYNASTY</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+	
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_SLUG_SALE">
+	<text>Name: Slug Controlled Sector
+	Type: Neutral (Nebula)
+	Unique: False
+	Dominant Faction: Slug Kleptocracy
+	Rebel Threat Level: Low
+
+	The Slugs were exiled from the Federation long ago, but they're little more than indifferent about it. A species of mostly criminals, just about everyone here will want to scam you. Always be on alert as you traverse this nebula, the Slugs are watching...
+	At the bottom of your Atlas, you notice a small "H" logo... a sponsorship? It reads "Come visit the local Hektar Industries Market Places!" Huh...</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_KLEPTOCRACY_HEKTAR</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_PIRATE_SALE">
+	<text>Name: Pirate Controlled Sector
+	Type: Hostile
+	Unique: False
+	Dominant Faction: Pirates
+	Rebel Threat Level: Medium
+
+	Pirate space is no safe spot for any ship. Fortunately, you should have little guilt picking off this sector's inhabitants, considering they'd be just as willing to do the same to you.
+	At the bottom of your Atlas, you notice a small "H" logo... a sponsorship? It reads "Come visit the local Hektar Industries Market Places!" Huh...</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_PIRATE_HEKTAR</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ABANDONED_SALE">
+	<text>Name: Abandoned Sector
+	Type: Uncolonized
+	Unique: False
+	Dominant Faction: None
+	Rebel Threat Level: Medium
+
+	This was once a civilian sector, but after heavy conflict it was abandoned. Now, it serves as a melting pot of scavengers from all over the galaxy hoping to make a profit off of not just the ruins, but ships like yours as well.
+	At the bottom of your Atlas, you notice a small "H" logo... a sponsorship? It reads "Come visit the local Hektar Industries Market Places!" Huh...</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_ABANDONED_GENERIC_HEKTAR</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_LEECH_SALE">
+	<text>Name: Leech Controlled Sector
+	Type: Neutral (Hazard)
+	Unique: False
+	Dominant Faction: Eargen Republic
+	Rebel Threat Level: Low
+
+	Don't expect your largest threat here to be the Leeches themselves. Their kind have mostly stayed neutral towards the Federation - the risk lies between the Inquisition and Coalition forces allied with the Republic. Be careful with who you confide in here, and try not to take too much advantage of the downtrodden citizens here.
+	At the bottom of your Atlas, you notice a small "H" logo... a sponsorship? It reads "Come visit the local Hektar Industries Market Places!" Huh...</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_REPUBLIC_HEKTAR</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+	
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_MINING_GENERIC">
+	<text>Name: Mining Sector
+	Type: Neutral (Hazard)
+	Unique: False
+	Dominant Faction: None
+	Rebel Threat Level: Low
+	
+	Sectors like these are littered with mineral-rich asteroid belts that draw in all sorts of prospectors. Though competition for coveted resources is high, the only major threat to you are the asteroids themselves.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECTOR_ASTEROID_GENERIC</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+	
+<!--\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\ Unique \\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_UNION_UNIQUE">
+	<text id="atlas_union"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_UNION_UNIQUE">SECTOR_UNION</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_UNION_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_MILITIA_UNIQUE">
+	<text id="atlas_militia"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_MILITIA_UNIQUE">SECTOR_UNION</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_MILITIA_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_FED_UNIQUE">
+	<text id="atlas_fed"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_FEDERATION_UNIQUE">SECTOR_UNION</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_FEDERATION_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ENGI_UNIQUE">
+	<text id="atlas_engi"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_HARMONY_UNIQUE">SECTOR_HARMONY</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_HARMONY_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ZOLTAN_UNIQUE">
+	<text id="atlas_zoltan"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_MINISTRY_UNIQUE">SECTOR_MINISTRY</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_MINISTRY_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ORCHID_UNIQUE">
+	<text id="atlas_orchid"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_GATHERING_UNIQUE">SECTOR_GATHERING</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_GATHERING_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_VAMPWEED_UNIQUE">
+	<text id="atlas_vampweed"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_CONFEDERATE_UNIQUE">SECTOR_CONFEDERATE</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_CONFEDERATE_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_FREEMANTIS_UNIQUE">
+	<text id="atlas_freemantis"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_FREEMANTIS_UNIQUE">SECTOR_FREEMANTIS</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_FREEMANTIS_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_CRYSTAL_UNIQUE">
+	<text id="atlas_crystal"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_IMPERIAL_UNIQUE">SECTOR_IMPERIAL</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_IMPERIAL_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_OUTCAST_UNIQUE">
+	<text id="atlas_outcast"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_OUTCAST_UNIQUE">SECTOR_OUTCAST</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_OUTCAST_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_LOSTSUN_UNIQUE">
+	<text id="atlas_lostsun"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_LOSTSUN_UNIQUE">SECTOR_OUTCAST</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_LOSTSUN_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_LANIUS_UNIQUE">
+	<text id="atlas_lanius"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_LANIUS_UNIQUE">SECTOR_ABANDONED_GENERIC</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_LANIUS_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_PIRATE_UNIQUE">
+	<text id="atlas_pirate"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_PIRATE_UNIQUE">SECTOR_PIRATE</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_PIRATE_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_HACKED_UNIQUE">
+	<text id="atlas_hacked"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_HACKER_UNIQUE">SECTOR_UNION</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_HACKER_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_REBEL_UNIQUE">
+	<text id="atlas_rebel"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_REBEL_UNIQUE">SECTOR_REBEL</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_REBEL_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_AUTO_UNIQUE">
+	<text id="atlas_auto"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_AUTO_UNIQUE">SECTOR_AUTO</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_AUTO_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_HIVE_UNIQUE">
+	<text id="atlas_hive"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_HIVE_UNIQUE">SECTOR_HIVE</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_HIVE_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ROCK_UNIQUE">
+	<text id="atlas_rock"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_THEOCRACY_UNIQUE">SECTOR_THEOCRACY</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_THEOCRACY_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_DUSK_UNIQUE">
+	<text id="atlas_dusk"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_DUSKBRINGER_UNIQUE">SECTOR_DUSKBRINGER</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_DUSKBRINGER_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_SLUG_UNIQUE">
+	<text id="atlas_slug"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_KLEPTOCRACY_UNIQUE">SECTOR_KLEPTOCRACY</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_KLEPTOCRACY_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_CLAN_UNIQUE">
+	<text id="atlas_clan"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_CLAN_UNIQUE">SECTOR_KLEPTOCRACY</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_CLAN_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_STARGROVE">
+	<text id="atlas_shell"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_STARGROVE">SECTOR_STARGROVE</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_STARGROVE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_SHELL_UNIQUE">
+	<text id="atlas_shell"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_GENIOCRACY_UNIQUE">SECTOR_GENIOCRACY</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_GENIOCRACY_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_MORPH_UNIQUE">
+	<text id="atlas_morph"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_MORPH_UNIQUE">SECTOR_GENIOCRACY</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_MORPH_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_LEECH_UNIQUE">
+	<text id="atlas_leech"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_REPUBLIC_UNIQUE">SECTOR_REPUBLIC</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_REPUBLIC_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_MONK_UNIQUE">
+	<text id="atlas_monk"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_MONK_UNIQUE">SECTOR_UNEXPLORED_GENERIC</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_MONK_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_GHOST_UNIQUE">
+	<text id="atlas_ghost"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_VAGABOND_UNIQUE">SECTOR_VAGABOND</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_VAGABOND_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_DYNASTY_UNIQUE">
+	<text id="atlas_dynasty"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_DYNASTY_UNIQUE">SECTOR_DYNASTY</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_DYNASTY_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_COALITION_UNIQUE">
+	<text id="atlas_coalition"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_COALITION_UNIQUE">SECTOR_UNEXPLORED_GENERIC</replaceSector> <!--has to be a nebula sector-->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_COALITION_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+	
+	
+<!--\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\ Secret \\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\-->
+	
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_AUGMENTED_SECRET">
+	<text>Name: Ancient Recovery Site
+	Type: Neutral
+	Dominant Faction: Augmented Lanius
+	Rebel Threat Level: Low
+
+	There is little information on this sector. It seems the ruins of some ancient race have been uncovered here, and it was promptly swarmed by a band of Lanius known as the Augmented.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECRET_AUGMENTED</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+	
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ORIGINS_SECRET"> <!--Doesn't make sense to have Ruwen's version here-->
+	<text>Name: Crystalline Origins
+	Type: ???
+	Dominant Faction: ???
+	Rebel Threat Level: ???
+
+	There is next to no information about this sector in your Atlas. What little data there is suggests this was the old homeworlds of the Crystalline Empire before they were forced about by greedy "pioneers".</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<secretSector>SECRET_ORIGINS</secretSector>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+	
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_SPIDER_SECRET">
+	<text id="atlas_spider"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="JUMP_TO_SPIDER"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="JUMP_TO_SPIDER">
+	<secretSector>SECRET_SPIDER</secretSector>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_JERRY_SECRET">
+	<text id="atlas_jerry"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="JUMP_TO_JERRY"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+	
+<event name="JUMP_TO_JERRY">
+	<secretSector>SECRET_JERRY</secretSector>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_NIGHTS_SECRET">
+	<text id="atlas_nights"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="JUMP_TO_NIGHTS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="JUMP_TO_NIGHTS">
+	<secretSector>SECRET_NIGHTS</secretSector>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_HEKTAR_SECRET">
+	<text id="atlas_hektar"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="JUMP_TO_HEKTAR"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="JUMP_TO_HEKTAR">
+	<secretSector>SECRET_HEKTAR</secretSector>
+</event>
+
+<event name="SMH_LIGHTSPEED_SECTOR_WARP_ESTATE_SECRET">
+	<text id="atlas_estate"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="JUMP_TO_ESTATE"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="JUMP_TO_ESTATE">
+	<secretSector>SECRET_ESTATE</secretSector>
+</event>
+	
+</FTL>

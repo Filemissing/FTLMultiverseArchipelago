@@ -1,0 +1,497 @@
+<FTL>
+<blueprintList name="Union_Generic">
+	<name>SEC_UNION</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_ALLY_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Federation_Generic">
+	<name>SEC_FEDERATION</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_ALLY_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Engi_Generic">
+	<name>SEC_ENGI</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_ALLY_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Zoltan_Generic">
+	<name>SEC_ZOLTAN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_ALLY_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Orchid_Generic">
+	<name>SEC_ORCHID</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_ALLY_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Vampweed_Generic">
+	<name>SEC_VAMP</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_NEUTRAL</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_NEUTRAL_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="FreeMantis_Generic">
+	<name>SEC_FREEMANTIS</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_ALLY_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Crystal_Generic">
+	<name>SEC_CRYSTAL</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_ALLY_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Outcast_Generic">
+	<name>SEC_OUTCAST</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_ALLY_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Separatist_Generic">
+	<name>SEC_SEP</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_NEUTRAL</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_NEUTRAL_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Abandoned_Generic">
+	<name>SEC_ABANDONED</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_NEUTRAL</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_NEUTRAL_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Abandoned_Sale">
+	<name>SEC_ABANDONED_SALE</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_NEUTRAL</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_NEUTRAL_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Pirate_Generic">
+	<name>SEC_PIRATE</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_NEUTRAL</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_NEUTRAL_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Pirate_Sale">
+	<name>SEC_PIRATE_SALE</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_NEUTRAL</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_NEUTRAL_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Rebel_Generic">
+	<name>SEC_REBEL</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HOSTILE_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Auto_Generic">
+	<name>SEC_AUTO</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HOSTILE_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Hive_Generic">
+	<name>SEC_HIVE</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HOSTILE_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Theocracy_Generic">
+	<name>SEC_THEOCRACY</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HOSTILE_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Duskbringer_Generic">
+	<name>SEC_DUSK</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HOSTILE_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Kleptocracy_Generic">
+	<name>SEC_KLEPTOCRACY</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HAZARD_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Kleptocracy_Sale">
+	<name>SEC_KLEPTOCRACY_SALE</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HAZARD_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Geniocracy_Generic">
+	<name>SEC_GENIOCRACY</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HAZARD_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Eargen_Generic">
+	<name>SEC_EARGEN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HAZARD_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Eargen_Sale">
+	<name>SEC_EARGEN_SALE</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HAZARD_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Vagabond_Generic">
+	<name>SEC_VAGABOND</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HAZARD_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Dynasty_Generic">
+	<name>SEC_DYNASTY</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HAZARD_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Coalition_Generic">
+	<name>SEC_COALITION</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HOSTILE_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Mining_Generic">
+	<name>SEC_MINING</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HAZARD_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Unexplored_Generic">
+	<name>SEC_UNEXPLORED</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_GENERIC</name>
+	<name>SEC_HAZARD_GENERIC</name>
+</blueprintList>
+
+<blueprintList name="Union_Main">
+	<name>SEC_UNION_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_ALLY_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Militia_Main">
+	<name>SEC_MILITIA_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_ALLY_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Federation_Main">
+	<name>SEC_FEDERATION_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_ALLY_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Engie_Main">
+	<name>SEC_ENGI_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_ALLY_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Zoltan_Main">
+	<name>SEC_ZOLTAN_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_ALLY_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Orchid_Main">
+	<name>SEC_ORCHID_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_ALLY_MAIN</name>
+</blueprintList>
+
+<blueprintList name="FreeMantis_Main">
+	<name>SEC_FREEMANTIS_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_ALLY_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Crystal_Main">
+	<name>SEC_CRYSTAL_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_ALLY_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Outcast_Main">
+	<name>SEC_OUTCAST_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_ALLY_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Lostsun_Main">
+	<name>SEC_LOSTSUN_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_NEUTRAL</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_NEUTRAL_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Lanius_Main">
+	<name>SEC_LANIUS_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_NEUTRAL</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_NEUTRAL_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Pirate_Main">
+	<name>SEC_PIRATE_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_NEUTRAL</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_NEUTRAL_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Hacker_Main">
+	<name>SEC_HACKER_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_ALLY</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_ALLY_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Rebel_Main">
+	<name>SEC_REBEL_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HOSTILE_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Auto_Main">
+	<name>SEC_AUTO_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HOSTILE_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Hive_Main">
+	<name>SEC_HIVE_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HOSTILE_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Theocracy_Main">
+	<name>SEC_THEOCRACY_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HOSTILE_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Duskbringer_Main">
+	<name>SEC_DUSK_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HOSTILE</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HOSTILE_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Kleptocracy_Main">
+	<name>SEC_KLEPTOCRACY_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HAZARD_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Guild_Main">
+	<name>SEC_GUILD_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HAZARD_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Geniocracy_Main">
+	<name>SEC_GENIOCRACY_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HAZARD_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Morph_Main">
+	<name>SEC_MORPH_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HAZARD_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Eargen_Main">
+	<name>SEC_EARGEN_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HAZARD_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Monk_Main">
+	<name>SEC_MONK_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HAZARD_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Vagabond_Main">
+	<name>SEC_VAGABOND_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HAZARD_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Dynasty_Main">
+	<name>SEC_DYNASTY_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HAZARD_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Coalition_Main">
+	<name>SEC_COALITION_MAIN</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_HAZARD</name>
+	<name>SEC_MAIN</name>
+	<name>SEC_HAZARD_MAIN</name>
+</blueprintList>
+
+<blueprintList name="Stargrove_Main">
+	<name>SEC_STARGROVE</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_UNIQUE</name>
+</blueprintList>
+
+<blueprintList name="Spider_Main">
+	<name>SEC_SPIDER</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_UNIQUE</name>
+</blueprintList>
+
+<blueprintList name="Nights_Main">
+	<name>SEC_NIGHTS</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_UNIQUE</name>
+</blueprintList>
+
+<blueprintList name="Hecktar_Main">
+	<name>SEC_HECKTAR</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_UNIQUE</name>
+</blueprintList>
+
+<blueprintList name="Jerry_Main">
+	<name>SEC_JERRY</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_UNIQUE</name>
+</blueprintList>
+
+<blueprintList name="Wentworth_Main">
+	<name>SEC_WENTWORTH</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_UNIQUE</name>
+</blueprintList>
+
+<blueprintList name="Origins_Main">
+	<name>SEC_ORIGINS</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_UNIQUE</name>
+</blueprintList>
+
+<blueprintList name="Augmented_Main">
+	<name>SEC_AUGMENTED</name>
+	<name>SEC_UNLOCK</name>
+	<name>SEC_UNIQUE</name>
+</blueprintList>
+</FTL>

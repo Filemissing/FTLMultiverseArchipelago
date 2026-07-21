@@ -85,17 +85,20 @@ function GiveResource(id, amount)
     end
 end
 function GiveAugment(id, amount)
-    -- both of these work but neither triggers overFull capacity, 1st is said to work properly with hidden augments if necessary
+    -- both of these work but neither triggers overFull capacity, 1st is said to work properly with hidden augments if necessary (I don't think it does)
 
-    PlayerShipManager:AddAugmentation(id)
+    -- PlayerShipManager:AddAugmentation(id)
     -- Equipment:AddToCargo(id)
+
+    local bp = Hyperspace.Blueprints:GetAugmentBlueprint(id)
+    Equipment:AddAugment(bp, false, true) -- working overload but doesn't handle hidden augments
 end
 function GiveCrew(id, amount)
     -- local blueprint = Hyperspace.Blueprints:GetCrewBlueprint(id)
     -- PlayerShipManager:AddCrewMemberFromBlueprint(blueprint, 0, true, 0, false)
 
     -- best option for now, just need to find a way to randomize name
-    PlayerShipManager:AddCrewMemberFromString("Ted", id, false, 0, true, true)
+    PlayerShipManager:AddCrewMemberFromString("APerson", id, false, 0, true, true)
 end
 function GiveSector(id, amount)
     -- use archipelaHat or add to list and manually modify choicebox

@@ -1,0 +1,741 @@
+<FTL>
+<!-- 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+					
+					DEBUG
+					
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<FTL>
+<augBlueprint name="SECTOR_UNION">
+	<title>Union Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_FEDERATION">
+	<title>Federation Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_HARMONY">
+	<title>Engi Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_MINISTRY">
+	<title>Zoltan Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_GATHERING">
+	<title>Orchid Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_CONFEDERATE">
+	<title>Vampweed Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_FREEMANTIS">
+	<title>FreeMantis Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_IMPERIAL">
+	<title>Crystal Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_OUTCAST">
+	<title>Outcast Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_SEPERATIST">
+	<title>Separatist Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_ABANDONED_GENERIC">
+	<title>Abandoned Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_PIRATE">
+	<title>Pirate Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_REBEL">
+	<title>Rebel Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_AUTO">
+	<title>Auto Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_HIVE">
+	<title>Hive Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_THEOCRACY">
+	<title>Theocracy Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_DUSKBRINGER">
+	<title>Duskbringer Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_KLEPTOCRACY">
+	<title>Kleptocracy Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_GENIOCRACY">
+	<title>Geniocracy Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_REPUBLIC">
+	<title>Eargen Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+<augBlueprint name="SECTOR_VAGABOND">
+	<title>Vagabond Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_DYNASTY">
+	<title>Dynasty Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_COALITION">
+	<title>Coalition Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_ASTEROID_GENERIC">
+	<title>Mining Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_UNEXPLORED_GENERIC">
+	<title>Unexplored Generic</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_ABANDONED_GENERIC_HEKTAR">
+	<title>Abandoned Sale</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_PIRATE_HEKTAR">
+	<title>Pirate Sale</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_KLEPTOCRACY_HEKTAR">
+	<title>Kleptocracy Sale</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_REPUBLIC_HEKTAR">
+	<title>Eargen Sale</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_UNION_UNIQUE">
+	<title>Union Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_MILITIA_UNIQUE">
+	<title>Militia Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_FEDERATION_UNIQUE">
+	<title>Federation Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_HARMONY_UNIQUE">
+	<title>Engie Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_MINISTRY_UNIQUE">
+	<title>Zoltan Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_GATHERING_UNIQUE">
+	<title>Orchid Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_CONFEDERATE_UNIQUE">
+	<title>Vampweed Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_FREEMANTIS_UNIQUE">
+	<title>FreeMantis Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_IMPERIAL_UNIQUE">
+	<title>Crystal Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_OUTCAST_UNIQUE">
+	<title>Outcast Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_LOSTSUN_UNIQUE">
+	<title>Lostsun Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+<augBlueprint name="SECTOR_LANIUS_UNIQUE">
+	<title>Lanius Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_PIRATE_UNIQUE">
+	<title>Pirate Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_HACKER_UNIQUE">
+	<title>Hacker Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_REBEL_UNIQUE">
+	<title>Rebel Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_AUTO_UNIQUE">
+	<title>Auto Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_HIVE_UNIQUE">
+	<title>Hive Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_THEOCRACY_UNIQUE">
+	<title>Theocracy Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_DUSKBRINGER_UNIQUE">
+	<title>Duskbringer Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_KLEPTOCRACY_UNIQUE">
+	<title>Kleptocracy Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_CLAN_UNIQUE">
+	<title>Guild Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_GENIOCRACY_UNIQUE">
+	<title>Geniocracy Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_MORPH_UNIQUE">
+	<title>Morph Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_REPUBLIC_UNIQUE">
+	<title>Eargen Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_MONK_UNIQUE">
+	<title>Monk Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_VAGABOND_UNIQUE">
+	<title>Vagabond Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_DYNASTY_UNIQUE">
+	<title>Dynasty Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_COALITION_UNIQUE">
+	<title>Coalition Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECTOR_STARGROVE_UNIQUE">
+	<title>Stargrove Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECRET_SPIDER">
+	<title>Spider Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECRET_NIGHTS">
+	<title>Nights Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+<augBlueprint name="SECRET_HEKTAR">
+	<title>Hecktar Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECRET_JERRY">
+	<title>Jerry Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECRET_ESTATE">
+	<title>Wentworth Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECRET_ORIGINS">
+	<title>Origins Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SECRET_AUGMENTED">
+	<title>Augmented Main</title>
+	<desc>You shouldn't be able to see this. An unlocked sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_GENERIC">
+	<title>Sector Generic</title>
+	<desc>You shouldn't be able to see this. Unlocks Generic sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_MAIN">
+	<title>Sector Main</title>
+	<desc>You shouldn't be able to see this. Unlocks Main sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_ALLY">
+	<title>Ally Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Ally sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_NEUTRAL">
+	<title>Neutral Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Neutral sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_HOSTILE">
+	<title>Hostile Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Hostile sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_HAZARD">
+	<title>Hazard Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Hazard sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_UNIQUE">
+	<title>Unique Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Unique sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_ALLY_GENERIC">
+	<title>Generic Ally Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Generic Ally sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_NEUTRAL_GENERIC">
+	<title>Generic Neutral Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Generic Neutral sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_HOSTILE_GENERIC">
+	<title>Generic Hostile Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Generic Hostile sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_HAZARD_GENERIC">
+	<title>Generic Hazard Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Generic Hazard sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_ALLY_MAIN">
+	<title>Main Ally Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Main Ally sector.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_NEUTRAL_MAIN">
+	<title>Main Neutral Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Main Neutral sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_HOSTILE_MAIN">
+	<title>Main Hostile Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Main Hostile sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_HAZARD_MAIN">
+	<title>Main Hazard Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks Main Hazard sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<augBlueprint name="SEC_UNLOCK">
+	<title>Unlockable Sector</title>
+	<desc>You shouldn't be able to see this. Unlocks All sectors.</desc> 
+	<cost>0</cost>
+	<bp>15</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+</FTL>

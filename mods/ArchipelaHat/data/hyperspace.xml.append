@@ -1,0 +1,19 @@
+<FTL>
+
+	<mod:findLike type="events">
+		<mod:findName type="req" name="COORDS">
+			<mod-append:name>smh_superhat_active</mod-append:name>
+		</mod:findName>
+		<mod:findName type="req" name="COORDS_BOSS">
+			<mod:findLike type="req" limit="1">
+				<mod-append:name>smh_superhat_active</mod-append:name>
+			</mod:findLike>
+		</mod:findName>
+		<mod:findName type="req" name="COORDS_BOSS_TOOLATE">
+			<mod:findLike type="req" limit="1">
+				<mod-append:name>smh_superhat_active</mod-append:name>
+			</mod:findLike>
+		</mod:findName>
+	</mod:findLike>
+
+</FTL>

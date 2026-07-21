@@ -12,9 +12,10 @@ an important detail to note is that the client has the most information and is t
 
 ## client -> mod packets
 
-| Structure                                   | Purpose                                       |
-| ------------------------------------------- | --------------------------------------------- |
-| ITEM\|<item_type>\|<item_id>\|<item_amount> | sent when the client recieves an item from AP |
-| DEATH                                       | sent when recieving death link                |
-| EXIT                                        | sent when the client shuts down               |
+| Structure                      | Purpose                                       |
+| ------------------------------ | --------------------------------------------- |
+| ITEM\|\<type>\|\<id>\|\<extra> | sent when the client recieves an item from AP |
+| DEATH                          | sent when recieving death link                |
+| EXIT                           | sent when the client shuts down               |
 
+![[Pasted image 20260721115827.png]]

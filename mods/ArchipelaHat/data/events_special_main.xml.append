@@ -1,0 +1,23 @@
+<FTL>
+
+	<mod:findName type="event" name="START_BEACON_EXPLAIN">
+		<mod-append:triggeredEvent name="SMH_PERMAHAT_EVENT" event="SMH_PERMAHAT_CHECK" loops="1">
+			<jumps amount="1" type="1"/>
+		</mod-append:triggeredEvent>
+	</mod:findName>
+
+	<event name="SMH_PERMAHAT_CHECK">
+		<loadEventList seeded="false" first="true">
+			<event name="SMH_PERMAHAT_CLEAR" req="magical_hat_active" lvl="0" max_lvl="0"/>
+			<event name="SMH_PERMAHAT_GIVE" req="magical_hat_active" lvl="1"/>
+		</loadEventList>
+	</event>
+	<event name="SMH_PERMAHAT_GIVE">
+		<variable name="smh_superhat_active" op="set" val="1"/>
+	</event>
+	<event name="SMH_PERMAHAT_CLEAR">
+		<clearTriggeredEvent name="SMH_PERMAHAT_EVENT"/>
+	</event>
+
+
+</FTL>
